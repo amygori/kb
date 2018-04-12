@@ -23,6 +23,8 @@
 * Git concepts
 * Git commands
 
+* [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
+
 ## Day 4
 
 * Chrome DevTools
