@@ -1,4 +1,5 @@
 # Student Knowledge Base
 
-* [Week 1](/w1/)
-* [Week 2](/w2/)
+* [Setting up your computer](mac-setup.md)
+* [Week 1](w1/)
+* [Week 2](w2/)
