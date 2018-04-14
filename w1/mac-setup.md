@@ -21,6 +21,14 @@ Open **System Preferencess > Security & Privacy** and set the following:
 * Under *Firewall*, click *Turn Firewall On*.
 * Under *FileVault*, enable FileVault. This will encrypt your disk. Without it, anyone with a bootable USB drive can get full access to your computer.
 
+## Visual Studio Code
+
+[Visual Studio Code](https://code.visualstudio.com/) (VSCode) is the program we will primarily use to edit code. Go to [the VSCode homepage](https://code.visualstudio.com/) and download it. Once downloaded, drag and drop the Visual Studio Code application file into your Applications folder.
+
+## Google Chrome
+
+[Google Chrome](https://www.google.com/chrome/) is the browser we will use in class. Download it. Once downloaded, drag and drop the Visual Studio Code application file into your Applications folder.
+
 ## iTerm2
 
 iTerm2 is an open source replacement for Apple's Terminal. It's highly customizable and comes with a lot of useful features.
@@ -85,7 +93,7 @@ To see what you have installed (with their version numbers):
 
 ## TODO 
 
-consider adding a `Brewfile` section here (see https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/)**
+consider adding a `Brewfile` section here (see https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/)
 
 ## Git and GitHub
 
@@ -127,9 +135,19 @@ $ git config --global core.excludesfile ~/.gitignore
 $ curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
 ```
 
-## TODO
+### Git and the command line
 
-* Visual Studio Code
-* Chrome & extensions
-* Node.js?
-* Ruby?
+We want to add two things to your command line: the ability to autocomplete Git commands and information about Git to your prompt. To do this, run:
+
+```
+$ brew install bash-completion bash-git-prompt
+$ echo '[[ -f "$(brew --prefix)/etc/bash_completion" ]] && source "$(brew --prefix)/etc/bash_completion"' >> ~/.bash_profile
+$ echo '[[ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]] && source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"' >> ~/.bash_profile
+```
+
+Exit the terminal and start a new window. Your command line should now look like this:
+
+```
+✔ ~
+13:09 $
+```
