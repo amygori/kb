@@ -27,7 +27,7 @@ Open **System Preferences > Security & Privacy** and set the following:
 
 ## Google Chrome
 
-[Google Chrome](https://www.google.com/chrome/) is the browser we will use in class. Download it. Once downloaded, drag and drop the Visual Studio Code application file into your Applications folder.
+[Google Chrome](https://www.google.com/chrome/) is the browser we will use in class. Download it. Once downloaded, drag and drop the Google Chrome application file into your Applications folder.
 
 ## iTerm2
 
