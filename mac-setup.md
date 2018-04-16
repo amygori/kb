@@ -14,7 +14,7 @@ Before anything else, update your operating system. To do that, go to the **Appl
 
 ## Security settings
 
-Open **System Preferencess > Security & Privacy** and set the following:
+Open **System Preferences > Security & Privacy** and set the following:
 
 * Under General, set *require a password after sleep or screen saver begins* to *immediately*
 * Click *Advanced…* and select *Require an administrator password to access system-wide preferences*
