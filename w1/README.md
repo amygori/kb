@@ -11,6 +11,7 @@
   * [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
   * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [CSS Tutorials from LevelUpTuts](https://www.youtube.com/playlist?list=PLLnpHn493BHH6DkHPhduhco5XavNA9JaD)
+* [HTML Color Codes](https://htmlcolorcodes.com/)
 
 ## Day 2
 
@@ -41,3 +42,15 @@
 * CSS flexbox (optional)
 * CSS grid (optional)
 * Asking technical questions
+
+### Links
+
+* [Sasha Laundy - Your Brain's API](https://www.youtube.com/watch?v=hY14Er6JX2s)
+* [Can I Use](http://caniuse.com/)
+* Flexbox
+  * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  * [MDN - Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+* Grid
+  * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+  * [Is it really safe to start using CSS Grid layout?](https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/) -- good article about browser support in general
+  * [Should I use Grid or Flexbox?](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/)
