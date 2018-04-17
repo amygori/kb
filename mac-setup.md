@@ -21,14 +21,6 @@ Open **System Preferences > Security & Privacy** and set the following:
 * Under *Firewall*, click *Turn Firewall On*.
 * Under *FileVault*, enable FileVault. This will encrypt your disk. Without it, anyone with a bootable USB drive can get full access to your computer.
 
-## Visual Studio Code
-
-[Visual Studio Code](https://code.visualstudio.com/) (VSCode) is the program we will primarily use to edit code. Go to [the VSCode homepage](https://code.visualstudio.com/) and download it. Once downloaded, drag and drop the Visual Studio Code application file into your Applications folder.
-
-## Google Chrome
-
-[Google Chrome](https://www.google.com/chrome/) is the browser we will use in class. Download it. Once downloaded, drag and drop the Google Chrome application file into your Applications folder.
-
 ## iTerm2
 
 iTerm2 is an open source replacement for Apple's Terminal. It's highly customizable and comes with a lot of useful features.
@@ -49,9 +41,10 @@ XCode is a set of developer tools from Apple that have to be installed. To insta
 
 Once XCode is installed, run the following in your terminal:
 
+    $ sudo xcodebuild -license
     $ xcode-select --install
 
-It will prompt you to install the command line tools. Follow the instructions and you'll have Xcode and Xcode command line tools both installed.
+The first line will prompt you to read the license and agree to it. It will ask for your password. The second line will prompt you to install the command line tools. Follow the instructions and you'll have Xcode and Xcode command line tools both installed.
 
 ## Homebrew
 
@@ -89,11 +82,7 @@ To update a package:
 
 To see what you have installed (with their version numbers):
 
-    brew list --versions    
-
-## TODO 
-
-consider adding a `Brewfile` section here (see https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/)
+    brew list --versions
 
 ## Git and GitHub
 
@@ -151,3 +140,11 @@ Exit the terminal and start a new window. Your command line should now look like
 ✔ ~
 13:09 $
 ```
+
+## Visual Studio Code
+
+[Visual Studio Code](https://code.visualstudio.com/) (VSCode) is the program we will primarily use to edit code. Go to [the VSCode homepage](https://code.visualstudio.com/) and download it. Once downloaded, drag and drop the Visual Studio Code application file into your Applications folder.
+
+## Google Chrome
+
+[Google Chrome](https://www.google.com/chrome/) is the browser we will use in class. Download it. Once downloaded, drag and drop the Google Chrome application file into your Applications folder.
