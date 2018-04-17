@@ -5,6 +5,13 @@
 * HTML intro and structure
 * Basic CSS (colors, fonts, spacing)
 
+### Links
+
+* [MDN](https://developer.mozilla.org/en-US/)
+  * [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [CSS Tutorials from LevelUpTuts](https://www.youtube.com/playlist?list=PLLnpHn493BHH6DkHPhduhco5XavNA9JaD)
+
 ## Day 2
 
 * Block-Element-Modifier for CSS
@@ -22,6 +29,8 @@
 * Homebrew
 * Git concepts
 * Git commands
+
+### Links
 
 * [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
 
