@@ -11,6 +11,7 @@ The hard work gets easier when we help each other. It's good to ask for help, an
 ## Giving Help
 
 We are a team of developers, and we will practice collaborative techniques throughout our 12 weeks.
+
 Being open to questions and requests for help is part of the territory.
 
 It's also totally fine if you don't want to be interrupted at times! You can signal that you are working in a focused way by letting people know in Slack that you're taking some time away by yourself, by working in one of the quiet rooms, or simply putting headphones on while you're working. If we notice that you're doing this all the time, we'll probably want to chat with you about balancing that solitary time with working in collaboration with others.
