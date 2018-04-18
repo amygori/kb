@@ -22,6 +22,7 @@
 ### Links
 
 * [GetBEM](http://getbem.com/)
+* [All About Floats](https://css-tricks.com/all-about-floats/)
 
 ## Day 3
 
@@ -32,7 +33,15 @@
 * Git commands
 
 ### Links
-
+* VSCode extensions
+  * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+  * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+  * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+  * [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+  * [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+  * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
 
 ## Day 4
