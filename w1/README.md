@@ -23,6 +23,8 @@
 
 * [GetBEM](http://getbem.com/)
 * [All About Floats](https://css-tricks.com/all-about-floats/)
+* [CSS Floats 101](https://alistapart.com/article/css-floats-101)
+* [Google Fonts](https://fonts.google.com/)
 
 ## Day 3
 
