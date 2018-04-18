@@ -4,8 +4,8 @@ We spend a lot of time together over the course of twelve weeks. We've got a lot
 
 This documentation covers the how-to practicalities of our immersive course, including general rules for getting the most out of Momentum while you're here with us.
 
-- Assignments
+- [Assignments](assigments.md)
 - Communication
 - [Community standards](community-standards.md)
-- Getting help
+- [Getting help](getting-help.md)
 - Meeting with instructors
