@@ -32,7 +32,7 @@ Share your discovery and insight! Look for opportunities to help others, or shar
 
 ## Getting help
 
-Sometimes you're stuck and you need help! There are several options.
+Sometimes you're stuck and you need help. There are several options.
 
 ### Ask another student
 
@@ -46,13 +46,15 @@ Slack can be a good option to let someone know you'd like to talk to them, as no
 
 You can always ask us general questions, following up on what we've covered in class, or anything else you've encountered and want to know more about.
 
-Before you ask us a question, be sure you've worked through the steps covered in [Assignments](assignments.md). But don't keep struggling in silence if you're really stuck. If you've struggled for 30 minutes and haven't made any progress, it's probably time to talk to an instructor.
+Before you ask us a question about a specific code problem, be sure you've worked through the steps covered in [Assignments](assignments.md). But don't keep struggling in silence if you're really stuck. If you've struggled for 30 minutes and haven't made any progress, it's probably time to talk to an instructor.
 
- When you come to us with a question about code you're stuck on, we'll want to talk about the following:
-- What is the problem you are seeing? It's helpful to be able to ask this as precisely as you can.
+ When you come to us with a question about code you're stuck on, we'll want you to talk about the following:
+- What's the problem you are seeing? It's helpful to be able to ask your question as precisely as you can.
 - What have you already tried? What results did you get?
 - What did you learn when you Googled this?
 
 ### Rubber Ducking 🐥
 
-[Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is a real technique! When you are stuck on something, sometimes all you need is to talk through the issue out loud. For this, you don't even need a real person -- you just need a listener. A rubber duck could do it! In practice we often end up using another person as a rubber duck, and it's just a thing we developers do for each other. Know that you will at different times be a rubber duck and need a rubber duck!
+[Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is a real technique! When you are stuck on something, sometimes all you need is to talk through the issue out loud. For this, you don't even need a real person -- you just need a listener. A rubber duck could do it!
+
+In practice we often end up using another person as a rubber duck, and it's just a thing we developers do for each other. Know that you will at different times be a rubber duck and need a rubber duck!
