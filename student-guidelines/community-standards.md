@@ -39,3 +39,13 @@ If you overhear people working through a problem, you shouldn't intermittently l
 Our last social rule bans subtle racism, sexism, homophobia, transphobia, and other kinds of bias. This one is different from the rest, because it covers a class of behaviors instead of one very specific pattern.
 
 Subtle -isms are small things that make others feel unwelcome, things that we all sometimes do by mistake. For example, saying "It's so easy my grandmother could do it" is a subtle -ism. Like the other three social rules, this one is often accidentally broken. Like the other three, it's not a big deal to mess up – you just apologize and move on.
+
+## Using code you didn't write
+
+Inevitably you will find code online that makes sense to include in what you're writing. Every developer does it. You will find code examples on Stack Overflow, in CSS-Tricks articles, in documentation and blog posts -- the nature of this work means that concepts are often best explained with examples.
+
+It is fine to use a line or two of code you found somewhere else _if you understand what it does_.
+
+If you want to use a longer snippet of code, it's probably not a good idea to do that. If you feel you have good reasons, please attribute the borrowed code in a comment, along with a URL, if possible.
+
+Above all, don't pass off work by someone else as your own. Not only does this violate our Code of Conduct, but it also hinders your learning and will not serve you in becoming a professional developer.
