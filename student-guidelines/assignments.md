@@ -4,8 +4,6 @@ Monday through Wednesday, you will have a daily project to work on. On Thursday,
 
 ## Getting an assignment
 
-Each day, you'll be invited via email to accept an assignment via GitHub classroom. Your assignment will be in the repo's README.
-
 ### Daily Assignments
 
 We'll introduce each day's homework early in the day during class time. We'll discuss them in class and use them to frame our exploration of the day's topics. You'll begin working on the assignment during afternoon lab time. You can expect to spend 4-6 hours each day working on it. Homework is due before the start of class the next morning.
@@ -14,8 +12,12 @@ We'll introduce each day's homework early in the day during class time. We'll di
 
 On Thursday, you'll get a longer, more involved project to work on that afternoon, on lab day on Friday, and through the weekend. It will be due on Monday morning before the start of class. These projects will sometimes be done in pairs or groups.
 
-## Working on assignments
+### GitHub Classroom
 
+Your intructor will share a link to that day's assignment in Github classroom. When you follow that link, you'll be asked to accept the assignment. Your assignment and any associated files you need will be in the repo that is created when you accept the assignment.
+
+Go that repo, clone it, and create a local branch named `development`. You'll make all your commits here on the `development` branch. Make frequent commits while you are working, and push that branch to the remote repo (i.e., create a remote `development` branch) as soon as possible.
+## Working on assignments
 ### 1. Understand the assignment
 
 Before you start, be sure you understand the assignment. Being able to restate what you're being asked to do in your own words will clarify what you need to do and help you create a task list.
@@ -55,19 +57,18 @@ We're in a great spot for walks, so be sure to get outside when you need a break
 
 When you come back to it, you'll have a fresh perspective and new ideas.
 
-## Submitting Assignments
-
-After you accept the assignment in GitHub Classroom, you'll write code and push commits to your own assignment repo, and  submit a [pull request](https://help.github.com/articles/about-pull-requests/) to the upstream assignment repo.
-
 ### Knowing when to quit at the end of the day
 
-We don't want you to stay up all night. When to turn in homework is your call, but remember that it does not have to be perfect.
+When to turn in homework is your call, but remember that it does not have to be perfect. If you're not making any more progress and you feel like you are at the limit of what you can do, it's time to submit what you have. We'd rather that you came to class well-rested and with specific questions than stay up too late going around in circles.
+## Submitting Assignments
+
+When you are ready to submit your assignment, you'll [open a new pull request](https://help.github.com/articles/creating-a-pull-request/) from your `development` branch to the `master` branch in your assignment repo.
 
 ### Pull Requests
 
-Your pull request should always include the following in the notes section:
+Your [pull request](https://help.github.com/articles/about-pull-requests/) should always include the following in the notes section:
 
-- The score you'd give your own work (is it a 1 or a 2? see ##Scoring below)
+- The score you'd give your own work (is it a 1 or a 2? See [Scoring](#Scoring) below)
 - An explanation of what still needs work if you gave it a 1
 - At least one question you'd like to ask about this homework
 
