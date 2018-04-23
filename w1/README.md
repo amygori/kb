@@ -7,6 +7,7 @@
 
 ### Links
 
+* [Homework: Build a Small Business Website](https://glitch.com/edit/#!/momentum-w1d1)
 * [MDN](https://developer.mozilla.org/en-US/)
   * [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
   * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -21,6 +22,7 @@
 
 ### Links
 
+* [Homework: Build a Dog Adoption Site](https://glitch.com/edit/#!/momentum-w1d2)
 * [GetBEM](http://getbem.com/)
 * [All About Floats](https://css-tricks.com/all-about-floats/)
 * [CSS Floats 101](https://alistapart.com/article/css-floats-101)
