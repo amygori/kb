@@ -3,27 +3,29 @@
 ## Day 1
 
 * HTML intro and structure
-* Basic CSS (colors, fonts, spacing)
 
 ### Links
 
 * [Homework: Build a Small Business Website](https://glitch.com/edit/#!/momentum-w1d1)
 * [MDN](https://developer.mozilla.org/en-US/)
   * [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
-  * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [A Brief History of Markup (PDF)](a_brief_history_of_markup.pdf)
-* [CSS Tutorials from LevelUpTuts](https://www.youtube.com/playlist?list=PLLnpHn493BHH6DkHPhduhco5XavNA9JaD)
-* [HTML Color Codes](https://htmlcolorcodes.com/)
+
 
 ## Day 2
 
-* Block-Element-Modifier for CSS
+* Basic CSS (colors, fonts, spacing)
 * CSS layout with float & position
+* Block-Element-Modifier for CSS
 * CSS external resources (fonts, images, @import)
 
 ### Links
 
 * [Homework: Build a Dog Adoption Site](https://glitch.com/edit/#!/momentum-w1d2)
+* [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [CSS Diner](https://flukeout.github.io/)
+* [HTML Color Codes](https://htmlcolorcodes.com/)
+* [background on CSS Tricks](https://css-tricks.com/almanac/properties/b/background/)
 * [GetBEM](http://getbem.com/)
 * [All About Floats](https://css-tricks.com/all-about-floats/)
 * [CSS Floats 101](https://alistapart.com/article/css-floats-101)
