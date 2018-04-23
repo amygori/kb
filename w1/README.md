@@ -26,6 +26,8 @@
 * [GetBEM](http://getbem.com/)
 * [All About Floats](https://css-tricks.com/all-about-floats/)
 * [CSS Floats 101](https://alistapart.com/article/css-floats-101)
+* [All About Positioning](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+* [Positioning Tutorial](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
 * [Google Fonts](https://fonts.google.com/)
 
 ## Day 3
