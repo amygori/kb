@@ -11,6 +11,7 @@
 * [MDN](https://developer.mozilla.org/en-US/)
   * [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
   * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [A Brief History of Markup (PDF)](a_brief_history_of_markup.pdf)
 * [CSS Tutorials from LevelUpTuts](https://www.youtube.com/playlist?list=PLLnpHn493BHH6DkHPhduhco5XavNA9JaD)
 * [HTML Color Codes](https://htmlcolorcodes.com/)
 
