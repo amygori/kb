@@ -67,3 +67,9 @@
   * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
   * [Is it really safe to start using CSS Grid layout?](https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/) -- good article about browser support in general
   * [Should I use Grid or Flexbox?](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/)
+
+## General Links
+
+* Podcasts
+  * [CodeNewbie](https://www.codenewbie.org/podcast)
+  * [Hanselminutes](https://www.hanselminutes.com/)
