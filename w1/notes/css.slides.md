@@ -110,7 +110,7 @@ See [HTML Color Codes](http://htmlcolorcodes.com/).
 * rgb(decRed, decGreen, decBlue)
 * rgba(decRed, decGreen, decBlue, alpha)
 * hsl(hue, saturation, lightness)
-* hsl(hue, saturation, lightness, alpha)
+* hsla(hue, saturation, lightness, alpha)
 
 ---
 
@@ -200,7 +200,7 @@ We see this often with CSS properties, where one property defines many subproper
 
 ---
 
-# Down with content-box, up with explicit sizes
+# Down with content-box
 
 ```css
 * {
@@ -366,10 +366,6 @@ Make a web page with two columns. They should be equal in width. Get text from h
 
 # Clearing floats
 
-* Elements made up only of floats lose their height, and collapse
-* This is a pain
-* Clearing floats can prevent this
-
 ```
 clear: both;
 clear: left;
@@ -379,6 +375,10 @@ clear: right;
 ---
 
 # Clearing methods 
+
+* Elements made up only of floats lose their height, and collapse
+* This is a pain
+* Clearing floats can prevent this
 
 https://css-tricks.com/all-about-floats/#article-header-id-4
 
