@@ -16,7 +16,6 @@
 
 * Basic CSS (colors, fonts, spacing)
 * CSS layout with float & position
-* Block-Element-Modifier for CSS
 * CSS external resources (fonts, images, @import)
 
 ### Links
@@ -37,15 +36,15 @@
   * [10 cheat codes for designing user interfaces](https://medium.com/sketch-app-sources/design-cheatsheet-274384775da9)
   * [Google Fonts](https://fonts.google.com/)
   * [HTML Color Codes](https://htmlcolorcodes.com/)
-* [GetBEM](http://getbem.com/)
 
 ## Day 3
 
-* VSCode
-* Command-line basics (.profile, file nav, less, cat, man)
+* Command-line basics (.bash_profile, file nav, less, cat, man)
 * Homebrew
 * Git concepts
 * Git commands
+* VSCode
+
 
 ### Links
 * VSCode extensions
@@ -64,6 +63,7 @@
 
 * Chrome DevTools
 * Media queries and responsive design
+* Block-Element-Modifier for CSS
 * CSS flexbox (optional)
 * CSS grid (optional)
 * Asking technical questions
@@ -72,6 +72,7 @@
 
 * [Sasha Laundy - Your Brain's API](https://www.youtube.com/watch?v=hY14Er6JX2s)
 * [Can I Use](http://caniuse.com/)
+* [GetBEM](http://getbem.com/)
 * Flexbox
   * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   * [MDN - Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
