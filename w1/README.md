@@ -58,7 +58,11 @@
   * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
 * [The $PATH to Enlightenment](http://alistapart.com/article/the-path-to-enlightenment)
-
+* [TryGit](https://try.github.io)
+* [Git Cheatsheet](http://ndpsoftware.com/git-cheatsheet.html)
+* [Pro Git](http://git-scm.com/book/en/v2)
+* [Git Immersion](http://gitimmersion.com/)
+* [Atlassian's Git Tutorials](https://www.atlassian.com/git/tutorials)
 ## Day 4
 
 * Chrome DevTools
