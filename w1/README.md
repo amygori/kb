@@ -21,17 +21,23 @@
 
 ### Links
 
+* [Instructor notes from class](notes/css.slides.md)
 * [Homework: Build a Dog Adoption Site](https://glitch.com/edit/#!/momentum-w1d2)
 * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [CSS Diner](https://flukeout.github.io/)
-* [HTML Color Codes](https://htmlcolorcodes.com/)
 * [background on CSS Tricks](https://css-tricks.com/almanac/properties/b/background/)
+* Floats
+  * [All About Floats](https://css-tricks.com/all-about-floats/)
+  * [CSS Floats 101](https://alistapart.com/article/css-floats-101)
+  * [Everything You Never Knew About CSS Floats](https://designshack.net/articles/css/everything-you-never-knew-about-css-floats/)
+* Positioning
+  * [All About Positioning](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+  * [Positioning Tutorial](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
+* Design
+  * [10 cheat codes for designing user interfaces](https://medium.com/sketch-app-sources/design-cheatsheet-274384775da9)
+  * [Google Fonts](https://fonts.google.com/)
+  * [HTML Color Codes](https://htmlcolorcodes.com/)
 * [GetBEM](http://getbem.com/)
-* [All About Floats](https://css-tricks.com/all-about-floats/)
-* [CSS Floats 101](https://alistapart.com/article/css-floats-101)
-* [All About Positioning](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
-* [Positioning Tutorial](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
-* [Google Fonts](https://fonts.google.com/)
 
 ## Day 3
 
@@ -52,6 +58,7 @@
   * [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
   * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
+* [The $PATH to Enlightenment](http://alistapart.com/article/the-path-to-enlightenment)
 
 ## Day 4
 
