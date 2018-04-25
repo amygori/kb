@@ -45,24 +45,23 @@
 * Git commands
 * VSCode
 
-
 ### Links
+* [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
+* [The $PATH to Enlightenment](http://alistapart.com/article/the-path-to-enlightenment)
 * VSCode extensions
   * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
   * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-  * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
   * [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
   * [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
   * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-  * [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
   * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-* [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
-* [The $PATH to Enlightenment](http://alistapart.com/article/the-path-to-enlightenment)
-* [TryGit](https://try.github.io)
-* [Git Cheatsheet](http://ndpsoftware.com/git-cheatsheet.html)
-* [Pro Git](http://git-scm.com/book/en/v2)
-* [Git Immersion](http://gitimmersion.com/)
-* [Atlassian's Git Tutorials](https://www.atlassian.com/git/tutorials)
+* Git
+  * [TryGit](https://try.github.io)
+  * [Git Cheatsheet](http://ndpsoftware.com/git-cheatsheet.html)
+  * [Pro Git](http://git-scm.com/book/en/v2)
+  * [Git Immersion](http://gitimmersion.com/)
+  * [Atlassian's Git Tutorials](https://www.atlassian.com/git/tutorials)
+
 ## Day 4
 
 * Chrome DevTools
