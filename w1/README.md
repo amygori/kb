@@ -73,6 +73,10 @@
 
 ### Links
 
+* [Chrome Dev Tools Reference](https://developers.google.com/web/tools/chrome-devtools/)
+  * [Inspecting Elements and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
+  * [Viewing and Editing CSS](https://developers.google.com/web/tools/chrome-devtools/css/)
+  * [CSS Reference](https://developers.google.com/web/tools/chrome-devtools/css/reference)
 * [Sasha Laundy - Your Brain's API](https://www.youtube.com/watch?v=hY14Er6JX2s)
 * [Can I Use](http://caniuse.com/)
 * [GetBEM](http://getbem.com/)
