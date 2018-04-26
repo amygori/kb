@@ -43,18 +43,10 @@
 * Homebrew
 * Git concepts
 * Git commands
-* VSCode
 
 ### Links
 * [Really Friendly Command Line Intro by Tracy Osborn](https://hellowebbooks.com/learn-command-line/)
 * [The $PATH to Enlightenment](http://alistapart.com/article/the-path-to-enlightenment)
-* VSCode extensions
-  * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-  * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-  * [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
-  * [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
-  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-  * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * Git
   * [TryGit](https://try.github.io)
   * [Git Cheatsheet](http://ndpsoftware.com/git-cheatsheet.html)
@@ -64,12 +56,29 @@
 
 ## Day 4
 
-* Chrome DevTools
+* Review Git
 * Media queries and responsive design
+* Chrome DevTools
+* VSCode
+* Asking technical questions
+
+### Links
+
+* [Instructor notes from class](notes/responsive.slides.md)
+* VSCode extensions
+  * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+  * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+  * [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+  * [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+* [Sasha Laundy - Your Brain's API](https://www.youtube.com/watch?v=hY14Er6JX2s)
+
+## Parking lot
+
 * Block-Element-Modifier for CSS
 * CSS flexbox (optional)
 * CSS grid (optional)
-* Asking technical questions
 
 ### Links
 
@@ -77,7 +86,6 @@
   * [Inspecting Elements and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
   * [Viewing and Editing CSS](https://developers.google.com/web/tools/chrome-devtools/css/)
   * [CSS Reference](https://developers.google.com/web/tools/chrome-devtools/css/reference)
-* [Sasha Laundy - Your Brain's API](https://www.youtube.com/watch?v=hY14Er6JX2s)
 * [Can I Use](http://caniuse.com/)
 * [GetBEM](http://getbem.com/)
 * Flexbox
@@ -87,6 +95,7 @@
   * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
   * [Is it really safe to start using CSS Grid layout?](https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/) -- good article about browser support in general
   * [Should I use Grid or Flexbox?](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/)
+
 
 ## General Links
 
