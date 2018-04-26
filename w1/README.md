@@ -66,6 +66,9 @@
 
 * [Instructor notes from class](notes/responsive.slides.md)
 * [Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/) - a very different look at Git, could be helpful. I found this illuminating a few months into using Git.
+* Responsive design
+  * [Responsive Web Design from A List Apart](https://alistapart.com/article/responsive-web-design) - An older article, but foundational in the concept of responsive web design.
+  * [9 Basic Principles of Responsive Web Design](http://blog.froont.com/9-basic-principles-of-responsive-web-design/)
 * VSCode extensions
   * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
   * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
