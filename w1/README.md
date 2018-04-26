@@ -65,6 +65,7 @@
 ### Links
 
 * [Instructor notes from class](notes/responsive.slides.md)
+* [Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/) - a very different look at Git, could be helpful. I found this illuminating a few months into using Git.
 * VSCode extensions
   * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
   * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)

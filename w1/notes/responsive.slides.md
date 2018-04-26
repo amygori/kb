@@ -74,3 +74,11 @@ img {
   * tablets: >= 768px 
   * desktops: >= 992px
   * big desktops: >= 1200px
+
+---
+
+# Mobile first
+
+* Design the mobile version of your site first
+* Enhance the page as it grows in width
+
