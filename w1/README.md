@@ -65,6 +65,7 @@
 ### Links
 
 * [Instructor notes from class](notes/responsive.slides.md)
+* [Code from class](https://github.com/momentum-cohort-2018-04/garden-site-with-css)
 * [Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/) - a very different look at Git, could be helpful. I found this illuminating a few months into using Git.
 * Responsive design
   * [Responsive Web Design from A List Apart](https://alistapart.com/article/responsive-web-design) - An older article, but foundational in the concept of responsive web design.
