@@ -8,6 +8,12 @@
 * Conditionals
 * Creating functions
 
+### Links
+
+* [JavaScript on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Simplified JavaScript Jargon](http://jargon.js.org/)
+* [Eloquent JavaScript](https://eloquentjavascript.net/)
+
 ## Day 2
 
 * Arrays
