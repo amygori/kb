@@ -53,7 +53,6 @@
   * [Pro Git](http://git-scm.com/book/en/v2)
   * [Git Immersion](http://gitimmersion.com/)
   * [Atlassian's Git Tutorials](https://www.atlassian.com/git/tutorials)
-
 ## Day 4
 
 * Review Git
@@ -100,7 +99,7 @@
   * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
   * [Is it really safe to start using CSS Grid layout?](https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/) -- good article about browser support in general
   * [Should I use Grid or Flexbox?](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/)
-
+* [Centering in CSS: a Complete Guide from CSS-Tricks](https://css-tricks.com/centering-css-complete-guide/)
 
 ## General Links
 
