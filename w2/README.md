@@ -20,6 +20,10 @@
 * Objects
 * Iteration w/ for/while
 
+### Links
+
+* [Loops and iteration on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+
 ## Day 3
 
 * Browser compatibility
@@ -33,3 +37,7 @@
 * Functions as arguments (forEach, map, reduce)
 * Debugging techniques
 * Chrome DevTools debugger
+
+### Links
+
+* [So You Want to be a Wizard](https://jvns.ca/wizard-zine.pdf)
