@@ -22,6 +22,7 @@
 
 ### Links
 
+* [Notes from class](notes/w2d2.md)
 * [Loops and iteration on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
 ## Day 3
