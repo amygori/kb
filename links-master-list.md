@@ -83,6 +83,7 @@ Here are the links shared day by day in the kb, indexed by topic.
 * [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+* [Live Reload](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 
 ## Generally Awesome
