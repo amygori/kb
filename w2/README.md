@@ -49,6 +49,6 @@
 
 ### Links
 
-* [Notes from class](notes/w2d4.html)
+* [Notes from class](notes/w2d4.md)
 * [Sample app from class](https://glitch.com/edit/#!/great-vinyl)
 * [So You Want to be a Wizard](https://jvns.ca/wizard-zine.pdf)
