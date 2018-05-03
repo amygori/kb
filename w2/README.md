@@ -34,6 +34,7 @@
 
 ### Links
 
+* [Slides from class: JS & the DOM](https://momentumlearn.github.io/dom-slides/#/)
 * [What is the DOM? on CSS-Tricks](https://css-tricks.com/dom/)
 * [DOM Enlightenment by Cody Lindley](http://www.domenlightenment.com/)
 * [Chapters 13-15 of Eloquent Javascript](https://eloquentjavascript.net/)
