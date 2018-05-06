@@ -2,14 +2,14 @@
 
 ## Day 1
 
-* npm & yarn
+* Node & NPM
 * Compiling assets with Parcel
 * Sass
 * BEM
 
 ### Links
 
-* [Yarn](https://yarnpkg.com/en/)
+* [NPM](https://www.npmjs.com/)
 * [Parcel](https://parceljs.org/)
 * [Sass](https://sass-lang.com/)
 * [GetBEM](http://getbem.com/introduction/)
@@ -33,11 +33,17 @@
 ## Day 3
 
 * ES6 syntax
+  * `let` and `const`
   * Template literals
   * Arrow functions
   * Classes vs prototypes
+  * Destructuring
 * JavaScript modules
 * Standard JavaScript style
+
+### Links
+
+* [ES6 Interactive Guide](http://stack.formidable.com/es6-interactive-guide/#/  )
 
 ## Day 4
 
