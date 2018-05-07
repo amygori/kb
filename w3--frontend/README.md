@@ -9,6 +9,7 @@
 
 ### Links
 
+* [Notes from class](notes/d1.md)
 * [NPM](https://www.npmjs.com/)
 * [Parcel](https://parceljs.org/)
 * [Sass](https://sass-lang.com/)
