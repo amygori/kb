@@ -16,6 +16,7 @@
 - [GitHub Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
 - [bbatsov Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide#source-code-layout)
 - [Learn to Program by Chris Pine](https://pine.fm/LearnToProgram/)
+- [code demo from class](notes/monday_class_demo.rb)
 
 ## Day 2
 
