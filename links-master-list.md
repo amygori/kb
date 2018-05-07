@@ -74,6 +74,15 @@ Here are the links shared day by day in the kb, indexed by topic.
 * [MDN: Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 * [The Basics of DOM Manipulation in Vanilla JavaScript](https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/)
 
+## Ruby
+
+- [Ruby Programming Language](https://www.ruby-lang.org/en/)
+- [Ruby Docs](http://ruby-doc.org/core-2.5.0/)
+- [GitHub Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
+- [bbatsov Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide#source-code-layout)
+- [Learn to Program by Chris Pine](https://pine.fm/LearnToProgram/)
+- [Ruby standard library](http://ruby-doc.org/stdlib-2.5.0/)
+- [Ruby on GitHub](https://github.com/topics/ruby)
 
 ## VS Code
 
@@ -93,3 +102,4 @@ Here are the links shared day by day in the kb, indexed by topic.
 * Podcasts
   * [CodeNewbie](https://www.codenewbie.org/podcast)
   * [Hanselminutes](https://www.hanselminutes.com/)
+  * [Ruby Rogues](https://devchat.tv/ruby-rogues)
