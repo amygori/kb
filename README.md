@@ -6,4 +6,6 @@
 * [Week 2](w2/)
 * Frontend
   * [Week 3](w3--frontend/)
+* Back End
+  * [Week 3](w3--backend)
 * [Links Master List](links-master-list.md)
