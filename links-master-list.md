@@ -81,6 +81,7 @@ Here are the links shared day by day in the kb, indexed by topic.
 - [GitHub Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
 - [bbatsov Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide#source-code-layout)
 - [Learn to Program by Chris Pine](https://pine.fm/LearnToProgram/)
+- [Writing Your Own Class in Ruby](http://rubylearning.com/satishtalim/writing_our_own_class_in_ruby.html)
 - [Ruby standard library](http://ruby-doc.org/stdlib-2.5.0/)
 - [Ruby on GitHub](https://github.com/topics/ruby)
 
