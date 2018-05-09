@@ -84,6 +84,7 @@ Here are the links shared day by day in the kb, indexed by topic.
 - [Writing Your Own Class in Ruby](http://rubylearning.com/satishtalim/writing_our_own_class_in_ruby.html)
 - [Ruby standard library](http://ruby-doc.org/stdlib-2.5.0/)
 - [Ruby on GitHub](https://github.com/topics/ruby)
+- [Map, Select, and other Enum methods](http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods)
 
 ## VS Code
 
