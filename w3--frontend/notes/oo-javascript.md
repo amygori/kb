@@ -39,7 +39,7 @@ var phoenix = {
   }
 }
 
-phoenix.getFirstName() // => Carter
+phoenix.getFirstName() // => Phoenix
 ```
 
 ---
@@ -127,7 +127,7 @@ Object.getPrototypeOf(phoenix)
 
 # This seems kind of nuts
 
-True. That's a lot of code to make an object that can respond to `getFirstName()`. It's not clear what's happening. Prototypal inheritance, which is what JS has, is prettier confusing.
+True. That's a lot of code to make an object that can respond to `getFirstName()`. It's not clear what's happening. Prototypal inheritance, which is what JS has, is pretty confusing.
 
 ---
 
@@ -198,8 +198,6 @@ One way to think of this is that a class should only have one reason to change. 
 ---
 
 # Don't do too much in the constructor
-
-Just set up some data.
 
 ```js
 // nope
