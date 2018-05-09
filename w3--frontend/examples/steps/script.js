@@ -49,25 +49,32 @@ class Field {
       this.input.value === '' ||
       typeof (this.input.value) === 'undefined')
   }
+
+  onChange (callback) {
+    this.input.addEventListener('change', callback)
+    this.input.addEventListener('input', callback)
+  }
 }
 
 class Form {
-  constructor (stepFields) {
-    this.fields = stepFields
+  constructor (stepFields, goalField) {
+    this.stepFields = stepFields
+    this.goalField = goalField
     this.calculator = new StepCalculator()
 
-    var onChange = function () {
+    var onChangeFn = function () {
       this.update()
     }
-    onChange = onChange.bind(this)
+    onChangeFn = onChangeFn.bind(this)
 
-    this.fields.forEach(function (field) {
-      field.input.addEventListener('change', onChange)
+    this.stepFields.forEach(function (field) {
+      field.onChange(onChangeFn)
     })
+    this.goalField.onChange(onChangeFn)
   }
 
   update () {
-    var steps = this.fields.map(function (field) {
+    var steps = this.stepFields.map(function (field) {
       return field.getValue()
     })
     steps = steps.filter(function (value) {
@@ -78,6 +85,10 @@ class Form {
 
     document.getElementById('total-steps').innerText = this.calculator.getTotal()
     document.getElementById('average-steps').innerText = this.calculator.getAverage()
+
+    if (!this.goalField.isEmpty()) {
+      document.getElementById('steps-to-goal').innerText = this.calculator.getRemaining(this.goalField.getValue())
+    }
   }
 }
 
@@ -86,4 +97,4 @@ var fields = fieldIds.map(function (id) {
   return new Field(document.getElementById(id))
 })
 
-var form = new Form(fields)
+var stepsForm = new Form(fields, new Field(document.getElementById('goal')))

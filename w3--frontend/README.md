@@ -25,6 +25,12 @@
 
 ### Links
 
+* Notes and examples
+  * [OO concepts](notes/oo-concepts.md)
+  * [OO for JavaScript](notes/oo-javascript.md)
+  * [Example: Simple Form](examples/simple-form/)
+  * [Example: Step Tracker](examples/steps/)
+
 * [Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 * [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 * Understanding `this`
