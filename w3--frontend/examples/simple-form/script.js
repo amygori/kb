@@ -5,13 +5,13 @@ function markValid (numberField) {
   numberField.parentElement.classList.remove('input-invalid')
 }
 
-function markInvalid (numberField) {
+function markInvalid (numberField, message) {
   numberField.parentElement.classList.remove('input-valid')
   numberField.parentElement.classList.add('input-invalid')
 
   var errorMsg = document.createElement('div')
   errorMsg.classList.add('input-hint', 'text-danger')
-  errorMsg.innerText = 'Your number is bad'
+  errorMsg.innerText = message
   numberField.parentElement.appendChild(errorMsg)
 }
 
@@ -23,11 +23,11 @@ numberField.addEventListener('input', function () {
   // get value of numberField
   var number = parseInt(numberField.value, 10)
   // check to see if numberField is >= 1 && <= 10
-  if (number >= 1 && number <= 10) {
-    // if so, add input-valid to the surrounding div
-    markValid(numberField)
+  if (number < 1) {
+    markInvalid(numberField, 'Your number is less than 1')
+  } else if (number > 10) {
+    markInvalid(numberField, 'Your number is greater than 10')
   } else {
-    // if not, add input-invalid to the surrounding div
-    markInvalid(numberField)
+    markValid(numberField)
   }
 })
