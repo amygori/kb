@@ -1,5 +1,7 @@
 # Week 3
 
+#### [class notes for the week](notes/)
+
 ## Day 1
 
 - Introduction to Ruby
@@ -35,11 +37,24 @@
 
 ## Day 3
 
+- RISE principles
 - Method params
 - Modules
 - Inheritance
 
-## Day 4
+### Links
 
-- Getting input
-- File I/O
+- [Pry](https://github.com/pry/pry)
+- [Ruby's method lookup](https://practicingruby.com/articles/method-lookup-1)
+- [Methods and their Parameters](https://ruby-doc.com/docs/ProgrammingRuby/html/tut_methods.html)
+- Some other types of method parameters
+  - [keyword arguments](https://robots.thoughtbot.com/ruby-2-keyword-arguments)
+- [options hash](http://blog.rlmflores.me/blog/2012/07/16/method-with-options/)
+- [splat](https://devblast.com/b/ruby-splat-operator/)
+- [more splat](http://www.monkeyandcrow.com/blog/the_strange_ruby_splat/)
+- [SOLID](https://robots.thoughtbot.com/back-to-basics-solid)
+- [Ruby Inheritance](http://rubylearning.com/satishtalim/ruby_inheritance.html)
+- [RISE: Principles for OO Design](notes/rise.rb)
+- [code demo on inheritance](notes/demo-inheritance.rb)
+- [code demo on modules](notes/demo-module.rb)
+
