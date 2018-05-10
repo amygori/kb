@@ -1,4 +1,4 @@
-class NumberField {
+class Field {
   constructor (input) {
     this.input = input
   }
@@ -29,6 +29,12 @@ class NumberField {
   }
 
   getValue () {
+    return this.input.value
+  }
+}
+
+class NumberField extends Field {
+  getValue () {
     return parseInt(this.input.value, 10)
   }
 }
@@ -36,8 +42,12 @@ class NumberField {
 var numberInput = document.getElementById('my-number')
 var numberField = new NumberField(numberInput)
 
-numberField.onChange(function () {
+var emailInput = document.getElementById('my-email')
+var emailField = new Field(emailInput)
+
+function updateForm () {
   numberField.clearErrorMsgs()
+  emailField.clearErrorMsgs()
 
   // get value of numberField
   var number = numberField.getValue()
@@ -50,4 +60,17 @@ numberField.onChange(function () {
   } else {
     numberField.markValid()
   }
-})
+
+  var email = emailField.getValue()
+
+  if (email === '') {
+    emailField.markInvalid('You must enter an email')
+  } else if (!email.includes('@', 1)) {
+    emailField.markInvalid('That does not look like an email')
+  } else {
+    emailField.markValid()
+  }
+}
+
+numberField.onChange(updateForm)
+emailField.onChange(updateForm)
