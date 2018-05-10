@@ -39,38 +39,50 @@ class NumberField extends Field {
   }
 }
 
-var numberInput = document.getElementById('my-number')
-var numberField = new NumberField(numberInput)
+class Form {
+  constructor () {
+    var numberInput = document.getElementById('my-number')
+    this.numberField = new NumberField(numberInput)
 
-var emailInput = document.getElementById('my-email')
-var emailField = new Field(emailInput)
+    var emailInput = document.getElementById('my-email')
+    this.emailField = new Field(emailInput)
 
-function updateForm () {
-  numberField.clearErrorMsgs()
-  emailField.clearErrorMsgs()
+    this.fields = [this.numberField, this.emailField]
+    var updateForm = this.updateForm.bind(this)
 
-  // get value of numberField
-  var number = numberField.getValue()
-
-  // check to see if numberField.input is >= 1 && <= 10
-  if (number < 1) {
-    numberField.markInvalid('Your number is less than 1')
-  } else if (number > 10) {
-    numberField.markInvalid('Your number is greater than 10')
-  } else {
-    numberField.markValid()
+    this.fields.forEach(function (field) {
+      // Polymorphism
+      field.onChange(updateForm)
+    })
   }
 
-  var email = emailField.getValue()
+  updateForm () {
+    this.fields.forEach(function (field) {
+      field.clearErrorMsgs()
+    })
 
-  if (email === '') {
-    emailField.markInvalid('You must enter an email')
-  } else if (!email.includes('@', 1)) {
-    emailField.markInvalid('That does not look like an email')
-  } else {
-    emailField.markValid()
+    // get value of numberField
+    var number = this.numberField.getValue()
+
+    // check to see if numberField.input is >= 1 && <= 10
+    if (number < 1) {
+      this.numberField.markInvalid('Your number is less than 1')
+    } else if (number > 10) {
+      this.numberField.markInvalid('Your number is greater than 10')
+    } else {
+      this.numberField.markValid()
+    }
+
+    var email = this.emailField.getValue()
+
+    if (email === '') {
+      this.emailField.markInvalid('You must enter an email')
+    } else if (!email.includes('@', 1)) {
+      this.emailField.markInvalid('That does not look like an email')
+    } else {
+      this.emailField.markValid()
+    }
   }
 }
 
-numberField.onChange(updateForm)
-emailField.onChange(updateForm)
+var form = new Form()
