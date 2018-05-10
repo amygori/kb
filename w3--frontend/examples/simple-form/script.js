@@ -1,6 +1,28 @@
 class Field {
-  constructor (input) {
+  constructor (input, validations) {
     this.input = input
+    this.validations = validations
+  }
+
+  validate () {
+    this.clearErrorMsgs()
+    var isValid = true
+    var errorMsgs = []
+
+    for (var validation of this.validations) {
+      if (!validation.isValid(this.getValue())) {
+        isValid = false
+        errorMsgs.push(validation.errorMsg)
+      }
+    }
+
+    if (isValid) {
+      this.markValid()
+    } else {
+      for (var msg of errorMsgs) {
+        this.markInvalid(msg)
+      }
+    }
   }
 
   markValid () {
@@ -40,14 +62,8 @@ class NumberField extends Field {
 }
 
 class Form {
-  constructor () {
-    var numberInput = document.getElementById('my-number')
-    this.numberField = new NumberField(numberInput)
-
-    var emailInput = document.getElementById('my-email')
-    this.emailField = new Field(emailInput)
-
-    this.fields = [this.numberField, this.emailField]
+  constructor (fields) {
+    this.fields = fields
     var updateForm = this.updateForm.bind(this)
 
     this.fields.forEach(function (field) {
@@ -58,31 +74,48 @@ class Form {
 
   updateForm () {
     this.fields.forEach(function (field) {
-      field.clearErrorMsgs()
+      field.validate()
     })
-
-    // get value of numberField
-    var number = this.numberField.getValue()
-
-    // check to see if numberField.input is >= 1 && <= 10
-    if (number < 1) {
-      this.numberField.markInvalid('Your number is less than 1')
-    } else if (number > 10) {
-      this.numberField.markInvalid('Your number is greater than 10')
-    } else {
-      this.numberField.markValid()
-    }
-
-    var email = this.emailField.getValue()
-
-    if (email === '') {
-      this.emailField.markInvalid('You must enter an email')
-    } else if (!email.includes('@', 1)) {
-      this.emailField.markInvalid('That does not look like an email')
-    } else {
-      this.emailField.markValid()
-    }
   }
 }
 
-var form = new Form()
+class Validation {
+  constructor (validationFn, errorMsg) {
+    this.validationFn = validationFn
+    this.errorMsg = errorMsg
+  }
+
+  isValid (value) {
+    return this.validationFn(value)
+  }
+}
+
+// Setup number field
+var numberInput = document.getElementById('my-number')
+
+var greaterThanOrEqOneValidation = new Validation(function (number) {
+  return number >= 1
+}, 'Your number is less than 1')
+
+var lessThanOrEqTenValidation = new Validation(function (number) {
+  return number <= 10
+}, 'Your number is greater than 10')
+
+var numberField = new NumberField(numberInput, [
+  greaterThanOrEqOneValidation,
+  lessThanOrEqTenValidation
+])
+
+// Setup email field
+var emailInput = document.getElementById('my-email')
+var emailField = new Field(emailInput, [
+  new Validation(function (email) {
+    return email !== ''
+  }, 'You must enter an email'),
+  new Validation(function (email) {
+    return email.includes('@', 1)
+  }, 'That does not look like an email')
+])
+
+// Setup form
+var form = new Form([numberField, emailField])
