@@ -55,5 +55,6 @@
 - [Ruby Inheritance](http://rubylearning.com/satishtalim/ruby_inheritance.html)
 - [SOLID principles](https://robots.thoughtbot.com/back-to-basics-solid)
 - [RISE: Principles for OO Design](notes/rise.rb)
+- [Using Include, Require, and Modules](https://commandercoriander.net/blog/2012/11/08/include-require-and-modules/)
 - [code demo on inheritance](notes/demo-inheritance.rb)
 - [code demo on modules](notes/demo-module.rb)
