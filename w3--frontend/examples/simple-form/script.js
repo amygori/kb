@@ -101,9 +101,14 @@ var lessThanOrEqTenValidation = new Validation(function (number) {
   return number <= 10
 }, 'Your number is greater than 10')
 
+var evenNumberValidation = new Validation(function (number) {
+  return number % 2 === 0
+}, 'Your number must be even')
+
 var numberField = new NumberField(numberInput, [
   greaterThanOrEqOneValidation,
-  lessThanOrEqTenValidation
+  lessThanOrEqTenValidation,
+  evenNumberValidation
 ])
 
 // Setup email field

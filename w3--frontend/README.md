@@ -39,23 +39,15 @@
 
 ## Day 3
 
-* ES6 syntax
-  * `let` and `const`
-  * Template literals
-  * Arrow functions
-  * Classes vs prototypes
-  * Destructuring
-* JavaScript modules
-* Standard JavaScript style
+* Review objects and prototypes
 
 ### Links
 
-* [ES6 Interactive Guide](http://stack.formidable.com/es6-interactive-guide/#/  )
+* Notes and examples
+  * [Example: Simple Form](examples/simple-form/)
 
 ## Day 4
 
-* eslint
-* Webpack/Grunt/Gulp - what are they?
 * Pair programming
 
 ### Pair programming exercise: string calculator
