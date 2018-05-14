@@ -15,6 +15,7 @@
 ### Links
 
 * [ES6 Interactive Guide](http://stack.formidable.com/es6-interactive-guide/#/)
+* [JSModules.io](http://jsmodules.io/)
 
 ## Day 2
 
