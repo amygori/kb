@@ -76,4 +76,23 @@ https://www.googleapis.com/books/v1/volumes?q=doris+lessing
     "publisher": "Harper Collins",
     "publishedDate": "2008-10-14",
     // ...
-```js
+```
+
+---
+
+# HTTP requests
+
+* Request method: GET, POST, PUT, DELETE, others
+* URL
+* Headers (Accept, Authorization, Content-Type, User-Agent, lots of others)
+* Body (for POST and PUT requests)
+
+---
+
+# HTTP responses
+
+* Status code (200, 201, 301, 400, 404, lots others)[^3]
+* Headers (Content-Type, Content-Length, Location, lots of others)
+* Body
+
+[^3]: https://httpstatuses.com/

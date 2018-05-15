@@ -24,6 +24,14 @@
 * Ajax w/ Superagent
 * Homework: GitHub Data VCard
 
+### Links
+
+* [The original Ajax article](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/)
+* [Superagent](https://visionmedia.github.io/superagent/)
+* [Ajax Basics Explained By Working At A Fast Food Restaurant](https://blog.codeanalogies.com/2018/01/15/ajax-basics-explained-by-working-at-a-fast-food-restaurant/)
+* [HTTP Status Guide](https://httpstatuses.com/)
+* [HTTP Cats](https://http.cat/)
+
 ## Day 3
 
 * Forms
