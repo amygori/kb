@@ -16,3 +16,38 @@
 - [DHH Rails 5 video](https://youtu.be/OaDhY_y8WTo)
 - [Rails doctrine](https://rubyonrails.org/doctrine/)
 - [Rails Guides](http://guides.rubyonrails.org)
+
+## Day 2
+
+- ERB
+- CSS in Rails applications
+- using third-party APIs
+
+### Links
+
+- [Request-Response Cycle in a Rails App](http://tutorials.jumpstartlab.com/topics/routes/request_cycle.html)
+- [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html)
+- [Asset Pipeline Best Practices](https://launchschool.com/blog/rails-asset-pipeline-best-practices)
+- [Layouts and Rendering in Rails](http://guides.rubyonrails.org/layouts_and_rendering.html)
+- [ActionView Partial Rendering](http://api.rubyonrails.org/classes/ActionView/PartialRenderer.html)
+- [ActionView Helpers (ALL of them)](http://api.rubyonrails.org/classes/ActionView/Helpers.html)
+- [Postman](http://api.rubyonrails.org/classes/ActionView/Helpers.html)
+
+## Day 3
+
+- Controllers and CRUD
+- Routes
+- Forms
+- Basic ActiveRecord
+
+### Links
+
+
+## Day 4
+
+- using PostgreSQL with Rails
+- Database migrations, rollback, schema.rb
+- Deploying to Heroku
+
+### Links
+
