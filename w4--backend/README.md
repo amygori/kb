@@ -46,9 +46,12 @@
 - [ActionController::Base in Rails API](http://api.rubyonrails.org/classes/ActionController/Base.html)
 - [Rails Guides: Filters](http://guides.rubyonrails.org/action_controller_overview.html#filters)
 - [Handling Request Params](http://tutorials.jumpstartlab.com/topics/controllers/parameters.html)
+- [Rails Routing in Rails Guides](http://guides.rubyonrails.org/routing.html)
+- [Understanding Rails Routing](https://richonrails.com/articles/understanding-rails-routing)
 - [Active Record Basics](http://edgeguides.rubyonrails.org/active_record_basics.html)
 - [Active Record Queries from the Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/active-record-queries)
 - [Rails Guides Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html)
+- [Active Record Validations](http://guides.rubyonrails.org/active_record_validations.html)
 
 ## Day 4
 
@@ -59,3 +62,5 @@
 
 ### Links
 
+- [Rails Guides: Form Helpers](http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object)
+- [Rails Documentation: FormBuilder](http://api.rubyonrails.org/v5.2/classes/ActionView/Helpers/FormBuilder.html)
