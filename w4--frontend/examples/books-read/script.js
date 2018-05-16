@@ -4,6 +4,34 @@ function id (idString) {
   return document.getElementById(idString)
 }
 
+request
+  .get('https://books-api.glitch.me/api/books')
+  .auth('clinton', 'password123')
+  .then(response => {
+    const books = response.body.books
+    updateSection('books-reading', books.filter(book => book.status === 'reading'))
+    updateSection('books-toread', books.filter(book => book.status === 'toread'))
+    updateSection('books-read', books.filter(book => book.status === 'read'))
+  })
+
+function updateSection (sectionId, books) {
+  const section = id(sectionId)
+  const tableBody = section.querySelector('tbody')
+  tableBody.innerHTML = booksToHTML(books)
+}
+
+function booksToHTML (books) {
+  return books.map(bookToHTML).join("")
+}
+
+function bookToHTML (book) {
+  return `<tr>
+    <td>${book.title}</td>
+    <td>${book.authors.join(', ')}</td>
+    <td>Actions</td>
+  </tr>`
+}
+
 id('add-book-button').addEventListener('click', function () {
   id('add-book-form').classList.remove('hidden')
   id('add-book-button').classList.add('hidden')
