@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Database</title>
+  <link rel="stylesheet" href="./node_modules/shoelace-css/dist/shoelace.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Books Database</h1>
+    <div class="main-actions">
+      <button type="button" class="button-lg">Add new book</button>
+    </div>
+    <h2>Reading</h2>
+    <div id="books-reading">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Magician's Nephew</td>
+            <td>C.S. Lewis</td>
+            <td>
+              <button type="button">Mark as read</button>
+              <button type="button" class="button-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>To Read</h2>
+    <div id="books-toread">
+        <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Authors</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Hobbit</td>
+                <td>J.R.R. Tolkien</td>
+                <td>
+                  <button type="button">Mark as reading</button>
+                  <button type="button" class="button-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <h2>Read</h2>
+    <div id="books-read">
+        <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Authors</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A Wizard of Earthsea</td>
+                <td>Ursula K. Le Guin</td>
+                <td>
+                  <button type="button" class="button-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</body>
+</html>
