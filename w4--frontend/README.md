@@ -35,9 +35,9 @@
 ## Day 3
 
 * Forms
-* CORS
-* json-server
-* Homework: Craigslist clone
+* POST, PUT, DELETE
+* HTTP basic authentication
+* Homework: Note-taking app
 
 ## Day 4
 
