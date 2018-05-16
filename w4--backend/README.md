@@ -16,6 +16,7 @@
 - [DHH Rails 5 video](https://youtu.be/OaDhY_y8WTo)
 - [Rails doctrine](https://rubyonrails.org/doctrine/)
 - [Rails Guides](http://guides.rubyonrails.org)
+- [Rails API](http://api.rubyonrails.org/)
 
 ## Day 2
 
@@ -37,14 +38,21 @@
 
 - Controllers and CRUD
 - Routes
-- Forms
 - Basic ActiveRecord
 
 ### Links
 
+- [Action Controller Overview](http://guides.rubyonrails.org/action_controller_overview.html)
+- [ActionController::Base in Rails API](http://api.rubyonrails.org/classes/ActionController/Base.html)
+- [Rails Guides: Filters](http://guides.rubyonrails.org/action_controller_overview.html#filters)
+- [Handling Request Params](http://tutorials.jumpstartlab.com/topics/controllers/parameters.html)
+- [Active Record Basics](http://edgeguides.rubyonrails.org/active_record_basics.html)
+- [Active Record Queries from the Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/active-record-queries)
+- [Rails Guides Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html)
 
 ## Day 4
 
+- Forms
 - using PostgreSQL with Rails
 - Database migrations, rollback, schema.rb
 - Deploying to Heroku
