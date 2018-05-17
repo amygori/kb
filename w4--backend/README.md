@@ -38,6 +38,7 @@
 
 - Controllers and CRUD
 - Routes
+- Forms
 - Basic ActiveRecord
 
 ### Links
@@ -52,15 +53,15 @@
 - [Active Record Queries from the Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/active-record-queries)
 - [Rails Guides Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html)
 - [Active Record Validations](http://guides.rubyonrails.org/active_record_validations.html)
+- [Rails Guides: Form Helpers](http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object)
+- [Rails Documentation: FormBuilder](http://api.rubyonrails.org/v5.2/classes/ActionView/Helpers/FormBuilder.html)
 
 ## Day 4
 
-- Forms
 - using PostgreSQL with Rails
 - Database migrations, rollback, schema.rb
 - Deploying to Heroku
 
 ### Links
 
-- [Rails Guides: Form Helpers](http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object)
-- [Rails Documentation: FormBuilder](http://api.rubyonrails.org/v5.2/classes/ActionView/Helpers/FormBuilder.html)
+- [Rails on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails5#local-workstation-setup)
