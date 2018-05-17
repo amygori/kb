@@ -34,15 +34,18 @@
 
 ## Day 3
 
-* Forms
 * POST, PUT, DELETE
 * HTTP basic authentication
 * Homework: Note-taking app
 
 ## Day 4
 
-* DOM manipulation w/ jQuery
-* Helper functions w/ LoDash
 * Event delegation
 * Deploying FE apps
+* DOM manipulation w/ jQuery
+* Helper functions w/ LoDash
 * Homework: iTunes search
+
+### Links
+
+* [A guide to naming variables](https://a-nickels-worth.blogspot.com/2016/04/a-guide-to-naming-variables.html)
