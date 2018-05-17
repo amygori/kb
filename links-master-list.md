@@ -24,6 +24,8 @@ Here are the links shared day by day in the kb, indexed by topic.
 * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [CSS Diner](https://flukeout.github.io/)
 * [`background` on CSS Tricks](https://css-tricks.com/almanac/properties/b/background/)
+* [GetBEM](http://getbem.com/introduction/)
+* [CSS Guidelines](https://cssguidelin.es/)
 * Floats
   * [All About Floats](https://css-tricks.com/all-about-floats/)
   * [CSS Floats 101](https://alistapart.com/article/css-floats-101)
@@ -47,6 +49,7 @@ Here are the links shared day by day in the kb, indexed by topic.
 * Responsive Design
   * [Responsive Web Design from A List Apart](https://alistapart.com/article/responsive-web-design) - An older article, but foundational in the concept of responsive web design.
   * [9 Basic Principles of Responsive Web Design](http://blog.froont.com/9-basic-principles-of-responsive-web-design/)
+* [Sass](https://sass-lang.com/)
 
 ## Front End -- General
 
@@ -83,6 +86,17 @@ Here are the links shared day by day in the kb, indexed by topic.
 * [Chapters 13-15 of Eloquent Javascript](https://eloquentjavascript.net/)
 * [MDN: Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 * [The Basics of DOM Manipulation in Vanilla JavaScript](https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/)
+* [Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
+* [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+* Understanding `this`
+  * [JavaScript `this` keyword explained simply](https://medium.com/@NinjaJavaScript/javascript-this-keyword-explained-simply-e90762d4945d)
+  * [Understanding JavaScript: This Keyword](https://hackernoon.com/understanding-javascript-the-this-keyword-4de325d77f68)
+* [ES6 Interactive Guide](http://stack.formidable.com/es6-interactive-guide/#/)
+* [JSModules.io](http://jsmodules.io/)
+* Ajax
+  * [The original Ajax article](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/)
+  * [Superagent](https://visionmedia.github.io/superagent/)
+  * [Ajax Basics Explained By Working At A Fast Food Restaurant](https://blog.codeanalogies.com/2018/01/15/ajax-basics-explained-by-working-at-a-fast-food-restaurant/)
 
 ## Rails
 
