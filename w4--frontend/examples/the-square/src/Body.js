@@ -27,7 +27,7 @@ class Body {
         this.center.y + this.size.y / 2 < other.center.y - other.size.y / 2 ||
         this.center.x - this.size.x / 2 > other.center.x + other.size.x / 2 ||
         this.center.y - this.size.y / 2 > other.center.y + other.size.y / 2
-    );
+    )
   }
 }
 
