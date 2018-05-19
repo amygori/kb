@@ -55,6 +55,7 @@
 - [Active Record Validations](http://guides.rubyonrails.org/active_record_validations.html)
 - [Rails Guides: Form Helpers](http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object)
 - [Rails Documentation: FormBuilder](http://api.rubyonrails.org/v5.2/classes/ActionView/Helpers/FormBuilder.html)
+- [Resource routing and CRUD notes](notes/resource_routing.md)
 
 ## Day 4
 

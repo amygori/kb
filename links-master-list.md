@@ -126,6 +126,7 @@ Here are the links shared day by day in the kb, indexed by topic.
 - [Rails Guides: Form Helpers](http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object)
 - [Rails Documentation: FormBuilder](http://api.rubyonrails.org/v5.2/classes/ActionView/Helpers/FormBuilder.html)
 - [Rails on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails5#local-workstation-setup)
+- [Resource routing and CRUD notes](notes/resource_routing.md)
 
 ## Ruby
 
