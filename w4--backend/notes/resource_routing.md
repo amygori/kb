@@ -1,7 +1,5 @@
 # Rails resourceful routing and CRUD
 
-Using the `resources` macro, we can generate a route for each one of these actions:
-
 ```ruby
 # config/routes.rb
 Rails.application.routes.draw do
