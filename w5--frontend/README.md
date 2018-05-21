@@ -6,6 +6,12 @@
 * Deployment
 * Homework: currency converter website with tests
 
+### Links
+
+* [Notes on Jest](notes/tdd.md)
+* [Deployment example](../w4--frontend/examples/clock/)
+* [Article on TDD with JavaScript](https://www.sitepoint.com/learning-javascript-test-driven-development-by-example/)
+
 ## Day 2
 
 * Review JavaScript basics
