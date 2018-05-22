@@ -1,0 +1,22 @@
+<h2>New assignment</h2>
+
+<% if @assignment.errors.any? %>
+  <div class="alert alert-danger">
+    <h3><%= pluralize(@assignment.errors.count, "error") %> prohibited this 
+    assignment from being saved:</h3>
+ 
+    <ul>
+    <% @assignment.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for(@assignment) do |f| %>
+  <div class="input-field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <button type="submit">Create assignment</button>
+<% end %>

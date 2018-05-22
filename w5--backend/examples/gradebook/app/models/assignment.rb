@@ -12,4 +12,7 @@ class Assignment < ApplicationRecord
   has_many :grades
 
   validates :title, presence: true, uniqueness: true
+  validates :weight, numericality: {
+    greater_than: 0
+  }
 end

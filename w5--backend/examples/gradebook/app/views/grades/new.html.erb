@@ -1,12 +1,12 @@
+<h2>Add grade for assignment "<%= @assignment.title %>"</h2>
+
 <%= form_for(@grade) do |f| %>
+  <%= f.hidden_field :assignment_id, value: @assignment.id %>
   <div class="input-field">
     <%= f.label :student %>
     <%= f.collection_select(:student_id, Student.all, :id, :name) %>
   </div>
-  <div class="input-field">
-    <%= f.label :assignment %>
-    <%= f.collection_select(:assignment_id, Assignment.all, :id, :title) %>
-  </div>
+  
   <div class="input-field">
     <%= f.label :score %>
     <%= f.text_field :score %>

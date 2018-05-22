@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_21_175855) do
+ActiveRecord::Schema.define(version: 2018_05_22_185900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2018_05_21_175855) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "weight", default: 1, null: false
     t.index ["title"], name: "index_assignments_on_title", unique: true
   end
 
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 2018_05_21_175855) do
     t.bigint "assignment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "graded_by_id"
     t.index ["assignment_id"], name: "index_grades_on_assignment_id"
     t.index ["student_id"], name: "index_grades_on_student_id"
   end
@@ -37,6 +39,13 @@ ActiveRecord::Schema.define(version: 2018_05_21_175855) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_students_on_name", unique: true
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
   add_foreign_key "grades", "assignments"

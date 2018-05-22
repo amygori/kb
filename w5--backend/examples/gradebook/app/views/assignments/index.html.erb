@@ -1,0 +1,26 @@
+<h2>Assignments</h2>
+
+<div>
+  <%= link_to "Create new assignment", new_assignment_url, class: "button" %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @assignments.each do |assignment| %>
+      <tr>
+        <td>
+          <%= assignment.title %>
+        </td>
+        <td>
+          <%= link_to "Add grade", new_grade_url(assignment_id: assignment.id), class: "button" %>
+        </td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>

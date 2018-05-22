@@ -11,7 +11,8 @@
 require 'test_helper'
 
 class AssignmentTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "weight is 1 by default" do
+    assignment = Assignment.new
+    assert_equal 1, assignment.weight
+  end
 end
