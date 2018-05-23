@@ -1,7 +1,10 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user
 
-  def current_user
-    User.find_or_create_by(username: "coolbeans")
+  def current_user    
+    if session[:user_id]
+      @user ||= User.find(session[:user_id])
+      return @user
+    end
   end
 end

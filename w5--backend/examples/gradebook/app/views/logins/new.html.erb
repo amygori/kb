@@ -1,0 +1,13 @@
+<%= form_tag login_url do %>
+  <div class="input-field">
+    <%= label_tag :username %>
+    <%= text_field_tag :username %>
+  </div>
+
+  <div class="input-field">
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div>
+
+  <button type="submit">Log in</button>
+<% end %>
