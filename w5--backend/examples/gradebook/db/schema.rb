@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_23_175052) do
+ActiveRecord::Schema.define(version: 2018_05_23_185705) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_05_23_175052) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "weight", default: 1, null: false
+    t.integer "owner_id"
     t.index ["title"], name: "index_assignments_on_title", unique: true
   end
 
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(version: 2018_05_23_175052) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  add_foreign_key "assignments", "users", column: "owner_id"
   add_foreign_key "grades", "assignments"
   add_foreign_key "grades", "students"
 end

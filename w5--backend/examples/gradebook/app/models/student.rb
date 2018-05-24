@@ -23,4 +23,8 @@ class Student < ApplicationRecord
     return nil if weighted_count == 0
     weighted_total / weighted_count
   end
+
+  def to_s
+    name
+  end
 end

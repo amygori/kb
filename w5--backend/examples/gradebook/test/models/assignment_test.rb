@@ -6,6 +6,8 @@
 #  title      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  weight     :integer          default(1), not null
+#  owner_id   :integer
 #
 
 require 'test_helper'

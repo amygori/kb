@@ -1,0 +1,27 @@
+<h2><%= @assignment.title %></h2>
+
+<h3>Grades</h3>
+<% if @assignment.grades.empty? %>
+  <p>You do not have any grades yet.</p>
+<% else %>
+  <table>
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Grade</th>
+        <th>Student Average</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @assignment.grades.each do |grade| %>
+        <tr>
+          <td><%= grade.student %></td>
+          <td><%= grade.score %></td>
+          <td><%= grade.student.average %></td>
+          <td></td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
+<% end %>

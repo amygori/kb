@@ -1,26 +1,38 @@
-<h2>Assignments</h2>
+<h2>My assignments</h2>
 
 <div>
   <%= link_to "Create new assignment", new_assignment_url, class: "button" %>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @assignments.each do |assignment| %>
+<% if @assignments.empty? %>
+  <p>You do not have any assignments yet.</p>
+<% else %>
+  <table>
+    <thead>
       <tr>
-        <td>
-          <%= assignment.title %>
-        </td>
-        <td>
-          <%= link_to "Add grade", new_grade_url(assignment_id: assignment.id), class: "button" %>
-        </td>
+        <th>Title</th>
+        <th>Students completed</th>
+        <th>Average</th>
+        <th>Actions</th>
       </tr>
-      <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @assignments.each do |assignment| %>
+        <tr>
+          <td>
+            <%= link_to assignment.title, assignment %>
+          </td>
+          <td>
+            <%= assignment.students_completed %>
+          </td>
+          <td>
+            <%= dash_if_nil assignment.average %>
+          </td>
+          <td>
+            <%= link_to "Add grade", new_grade_url(assignment_id: assignment.id), class: "button" %>
+          </td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
+<% end %>

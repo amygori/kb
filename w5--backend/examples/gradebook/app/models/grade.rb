@@ -8,6 +8,7 @@
 #  assignment_id :bigint(8)
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
+#  graded_by_id  :integer
 #
 
 class Grade < ApplicationRecord
@@ -17,4 +18,5 @@ class Grade < ApplicationRecord
 
   validates :score, presence: true, 
     numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }
+  validates_uniqueness_of :student, scope: :assignment
 end

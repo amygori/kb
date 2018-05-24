@@ -7,7 +7,9 @@ class LoginsController < ApplicationController
     user = User.find_by(username: params[:username])
     if user and user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to root_url, notice: "You have successfully logged in!"
+      redirect_url = session[:redirect_url] || root_url
+      session[:redirect_url] = nil
+      redirect_to redirect_url, notice: "You have successfully logged in!"
     else
       flash.now[:alert] = "There is no user with that username and password."
       render :new

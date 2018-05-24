@@ -8,4 +8,12 @@ module ApplicationHelper
       "alert"
     end
   end
+
+  def dash_if_nil(value)
+    if value.nil?
+      "-"
+    else
+      value
+    end
+  end
 end

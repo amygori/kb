@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   resources :grades
   resources :assignments
 
-  resource :login
   get 'login', to: 'logins#new'
   get 'logout', to: 'logins#destroy', as: 'logout'
-
-  root 'grades#index'
+  resource :login
+  
+  root 'assignments#index'
 end

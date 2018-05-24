@@ -12,7 +12,7 @@ class GradesController < ApplicationController
     @grade = Grade.new(grade_params)
     @grade.graded_by = current_user
     if @grade.save
-      redirect_to grades_url
+      redirect_to assignments_url
     else
       render :new
     end

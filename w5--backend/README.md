@@ -28,6 +28,10 @@
 - Sessions
 - Authentication
 
+### To cover
+
+- Go over has_many through associations again
+- Talk about associations and how they are named
 
 ## Day 4
 
