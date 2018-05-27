@@ -2,10 +2,22 @@
 
 Here are the links shared day by day in the kb, indexed by topic.
 
+## General programming
+
+* [A guide to naming variables](https://a-nickels-worth.blogspot.com/2016/04/a-guide-to-naming-variables.html)
+* [So You Want to be a Wizard](https://jvns.ca/wizard-zine.pdf)
+* [Sasha Laundy - Your Brain's API](https://www.youtube.com/watch?v=hY14Er6JX2s)
+* Podcasts
+  * [CodeNewbie](https://www.codenewbie.org/podcast)
+  * [Hanselminutes](https://www.hanselminutes.com/)
+  * [Ruby Rogues](https://devchat.tv/ruby-rogues)
+  * [Developer Tea](https://developertea.simplecast.fm/)
+
+
 ## HTML
 
 * [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [A Brief History of Markup (PDF)](a_brief_history_of_markup.pdf)
+* [A Brief History of Markup (PDF)](w1/a_brief_history_of_markup.pdf)
 
 ## Command Line
 
@@ -151,11 +163,3 @@ Here are the links shared day by day in the kb, indexed by topic.
 * [Live Reload](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 
-## Generally Awesome
-
-* [Sasha Laundy - Your Brain's API](https://www.youtube.com/watch?v=hY14Er6JX2s)
-* [So You Want to be a Wizard](https://jvns.ca/wizard-zine.pdf)
-* Podcasts
-  * [CodeNewbie](https://www.codenewbie.org/podcast)
-  * [Hanselminutes](https://www.hanselminutes.com/)
-  * [Ruby Rogues](https://devchat.tv/ruby-rogues)

@@ -22,7 +22,7 @@ function makeChange (amount, coins) {
   for (let coin of coins) {
     addCoins(coin[0], coin[1])
   }
-  
+
   return change
 }
 

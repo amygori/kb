@@ -4,7 +4,7 @@ class DiceRoll {
   constructor (desc) {
     if (desc.includes('+')) {
       // this.dice = desc.split('+').map(groupDesc => new DiceRoll(groupDesc))
-      
+
       let descList = desc.split('+')
       this.dice = []
       for (let groupDesc of descList) {
