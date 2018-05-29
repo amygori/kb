@@ -6,6 +6,9 @@
 - Rails JS helpers
 - controller/integration tests and system tests with Capybara
 
+### Notes
+- [DEMO: Holidays with AJAX](notes/holidays)
+
 ## Day 2
 
 - REST in Rails
