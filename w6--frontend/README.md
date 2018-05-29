@@ -11,6 +11,11 @@
 *	JSX
 *	State and events
 
+### Links
+
+- [Example: Clicker](examples/clicker)
+- [Example: Dungeon Tools](https://github.com/momentum-cohort-2018-04/dungeon-tools)
+
 ## Day 2: Props and testing
 
 * Props
