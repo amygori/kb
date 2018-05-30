@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Principles of Object-Oriented Design in Ruby
+  author: Sandi Metz
+  description: central park 70 people's pharmacy yoga duke chapel the eleanor tobacco, hipster sustain-a-bull slow-food city center ballpark lakewood watts farmer.
+  url: https://www.sandimetz.com/products/
+
+two:
+  title: React Enlightenment
+  author: Cody Lindley
+  description: Learn React in the terse cookbook style found with previous Enlightenment titles (i.e., jQuery Enlightenment, JavaScript Enlightenment, DOM Enlightenment).
+  url: reactenlightenment.com

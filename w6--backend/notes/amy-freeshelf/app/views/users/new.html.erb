@@ -1,0 +1,23 @@
+<h1>Register for FreeShelf</h1>
+
+<% if notice %>
+<div class="alert alert-<%= flash[:msg] %>"><%= notice %></div>
+<% end %>
+
+  <%= form_with(model: @user, local:true) do |f| %>
+  <div class="form-group">
+    <div class="field">
+      <%= f.label :name, class: "form__label" %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label :email, class: "form__label" %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.label :password, class: "form__label" %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :password_confirmation, class: "form__label" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Register', class: "btn btn-submit" %>
+    </div>
+  </div>
+  <% end %>

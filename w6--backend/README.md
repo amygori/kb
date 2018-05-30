@@ -8,6 +8,7 @@
 
 ### Notes
 - [DEMO: Holidays with AJAX](notes/holidays)
+- [Amy's unfinished FreeShelf]( notes/amy-freeshelf)
 
 ## Day 2
 

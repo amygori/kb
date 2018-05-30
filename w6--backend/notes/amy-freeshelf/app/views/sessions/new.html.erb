@@ -1,0 +1,17 @@
+<h1>Log In</h1>
+  <% if notice %>
+  <div class="alert alert-<%= flash[:msg] %>"><%= notice %></div>
+  <% end %>
+  <%= form_with(url: session_path, local:true) do |f| %>
+  <div class="form-group">
+    <div class="field">
+      <%= f.label :email, class: "form__label" %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.label :password, class: "form__label" %>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Log In', class: "btn btn-submit" %>
+    </div>
+  </div>
+  <% end %>

@@ -1,0 +1,10 @@
+<h2> User Account Page </h2>
+<% if notice %>
+    <div class="alert alert-<%= flash[:msg] %>" id="home-page-flash"><%= flash[:notice] %></div>
+<% end %>
+<div class="list">
+  <ul class="list-group">
+    <li class="list-group-item"><%= @user.name %></li>
+    <li class="list-group-item"><%= @user.email %></li>
+  </ul>
+</div>

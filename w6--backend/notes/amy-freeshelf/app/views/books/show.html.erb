@@ -1,0 +1,26 @@
+<div id="notice" class="alert alert-<%= flash[:msg]%>">
+  <%= notice %>
+</div>
+<div class="card book-entry">
+  <div class="card-body">
+    <h3><%= @book.title %></h3>
+    <p>by <%= @book.author %></p>
+    <p><a href="<%= @book.url %>">Read online</a></li>
+    <p><%= @book.description %></p>
+    <%= link_to 'Edit', edit_book_path(@book) %> |
+    <%= link_to 'Back', books_path %>
+  </div>
+</div>
+
+<div class="check-out">
+  <% unless @book.checked_out? %>
+    <%= link_to 'Check this book out', new_book_checkout_path(@book), class: "btn btn-lg btn-primary" %>
+  <% else %>
+    <div class="alert alert-warning" style"margin-top: 20px;">This book has been checked out</div>
+  <% end %>
+</div>
+
+
+
+
+

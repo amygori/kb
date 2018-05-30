@@ -1,0 +1,20 @@
+<div class="page-header">
+  <%= link_to root_path, class: "header__link" do %>
+  <div class="emojii--book">📖</div>
+    <h1 class="page-header--title">FreeShelf</h1>
+  <% end %>
+  <div class="nav-controls">
+    <%#=
+      link_to_if(current_user, "Log Out", {url: session_url, method: :delete}, class: "btn btn-outline-light") do
+        link_to("Log In", new_session_path, class: "btn btn-outline-light")
+      end
+    %>
+    <% if current_user %>
+      <%= link_to('Log Out', session_path, method: :delete, class: "btn btn-outline-light") %>
+    <% else %>
+      <%= link_to('Sign up', new_user_path, class: "btn btn-outline-light")%>
+      <%= link_to('Log In', new_session_path, class: "btn btn-outline-light")%>
+    <% end %>
+    <%= link_to 'New Book', new_book_path, class: "btn btn-outline-light" %>
+  </div>
+</div>

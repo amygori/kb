@@ -1,0 +1,121 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Roboto+Slab');
+
+$pale-blue: #7EA0B7;
+$soft-black: #212227;
+$moonstone-blue: #73ABC2;
+$lapislazuli: #247BA0;
+$dk-purple: #36213E;
+$soft-purple: #554971;
+$off-white: #F3EDED;
+$light-cyan: #DFF8EB;
+
+$link-color: $lapislazuli;
+$link-hover: $moonstone-blue;
+$body-font: 'IBM Plex Sans',sans-serif;
+$header-font: 'Roboto Slab',serif;
+$btn-primary: $soft-purple;
+
+body {
+  background-color: $off-white;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+  0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 20px;
+}
+
+.btn-primary {
+  background-color: $btn-primary;
+  padding: 12px;
+  &:hover, &:active, &:not(.disabled) {
+    background-color: lighten($btn-primary, 15%)
+  }
+}
+
+main {
+  margin: 20px;
+  font-family: $body-font;
+ }
+
+ a {
+   color: $link-color;
+   &:hover {
+     color: $link-hover;
+   }
+ }
+
+header {
+   margin-bottom: 25px;
+   border-bottom: solid 1px $soft-black;
+   background-color: $pale-blue;
+   color: $off-white;
+   font-family: $header-font;
+ }
+
+.header__link {
+  color: $off-white;
+  &:hover{
+    color: $off-white;
+    text-decoration: none;
+  }
+}
+
+.nav-controls {
+  display: inline-block;
+  float: right;
+  margin: 25px;
+  .btn {
+    padding: 10px;
+    margin-left: 10px;
+  }
+}
+.page-header--title {
+  display: inline-block;
+  line-height: 2em;
+  vertical-align: top;
+  padding-left: 10px;
+}
+
+.emojii--book {
+font-size: 60px;
+display: inline;
+margin-left: 10px;
+}
+
+.btn-submit {
+  background-color: $soft-purple;
+  color: $off-white;
+  padding: 15px;
+  margin-top: 20px;
+  &:hover {
+    background-color: darken($soft-purple, 10%);
+  }
+}
+
+.form__label {
+  font-weight: 600;
+  margin-top: 15px;
+}
+.form-group{
+  width: 60%;
+}
+
+.check-out {
+  margin: 20px;
+}

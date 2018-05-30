@@ -1,0 +1,19 @@
+<%
+  user = current_user
+%>
+<h3>Check out <%= @book.title %> by <%= @book.author %>?</h3>
+<%= form_with(url: book_checkouts_path) do |f| %>
+  <div class="form-group">
+  <% unless user %>
+    <div class="field">
+      <%= f.label :email, class: "form__label" %>
+      <%= f.email_field :email, class: "form-control" %>
+    </div>
+  <% end %>
+    <%= f.hidden_field :user_id, value: user.id if user %>
+    <%= f.hidden_field :book_id, value: @book.id %>
+    <div class="actions">
+      <%= f.submit "Yes, Check out", class: "btn btn-submit" %>
+    </div>
+  </>
+<% end %>
