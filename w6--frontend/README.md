@@ -25,6 +25,15 @@
 *	Snapshot testing
 *	Testing with enzyme
 
+### Links
+
+- [Testing React Apps](https://facebook.github.io/jest/docs/en/tutorial-react.html)
+- [The Right Way to Test React Components](https://medium.freecodecamp.org/the-right-way-to-test-react-components-548a4736ab22)
+- [Enzyme](http://airbnb.io/enzyme/)
+- Example: Tweetshrink
+  - [Original monolithic version](examples/tweetshrink/monolithic/)
+  - [In-class changes](examples/tweetshrink/in-class/)
+
 ## Day 3: React lifecycle
 
 *	Lifecycle events
