@@ -15,19 +15,14 @@
 - REST in Rails
 - Building an API with Rails
 - JSON and jBuilder
+- [DEMO: cats API]()
 
 ## Day 3
 
 - Building RESTful resources
-- Testing APIs
+- API Authentication
 
-## Day 4
-
-- API authentication
-- Bulk loading data
-
-
- ## Links
+## Links
 
 ### Integration and System Testing
 
@@ -48,3 +43,19 @@
 - [XMLHttpRequestObject on MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 - [Working with JavaScript in Rails on RailsGuides](http://guides.rubyonrails.org/working_with_javascript_in_rails.html)
 - [DHH on server-generated js responses](https://signalvnoise.com/posts/3697-server-generated-javascript-responses)
+
+### REST
+
+- [What REST means](https://codewords.recurse.com/issues/five/what-restful-actually-means)
+- [The Rest Cookbook](http://restcookbook.com/)
+- [What is a RESTful API? -video](https://youtu.be/Q-BpqyOT3a8)
+
+### Rails APIs
+
+- [Rails Guides: API Applications](http://guides.rubyonrails.org/api_app.html)
+- [ActionController::API](http://api.rubyonrails.org/v5.2.0/classes/ActionController/API.html)
+- [Rails Controller `respond_to`](http://api.rubyonrails.org/classes/ActionController/MimeResponds.html#method-i-respond_to)
+- [Jbuilder](https://github.com/rails/jbuilder)
+- [HTTP Status Codes](http://www.restapitutorial.com/httpstatuscodes.html)
+- - [Rails Guides: Layouts and Rendering - The Status Option](http://guides.rubyonrails.org/layouts_and_rendering.html#the-status-option)
+- [Rails Routing: Namespacing](http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing)
