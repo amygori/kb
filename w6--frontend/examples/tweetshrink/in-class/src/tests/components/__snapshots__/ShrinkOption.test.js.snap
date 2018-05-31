@@ -12,7 +12,6 @@ exports[`does not change inadvertenly 1`] = `
       onChange={[Function]}
       type="checkbox"
     />
-
     <span>
       Eliminate extra spaces
     </span>

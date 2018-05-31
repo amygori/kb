@@ -3,21 +3,17 @@ import 'shoelace-css/dist/shoelace.css'
 import './App.css'
 import textOptions from './textOptions'
 
-import ShrunkText from './components/ShrunkText'
 import ShrinkOptions from './components/ShrinkOptions'
-import synonymSearch from './synonymSearch'
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
       text: '',
-      options: [],
-      textOptions: textOptions.slice()
+      options: []
     }
 
     this.setOption = this.setOption.bind(this)
-    this.searchForSynonyms = this.searchForSynonyms.bind(this)
   }
 
   updateText (event) {
@@ -38,18 +34,6 @@ class App extends Component {
     })
   }
 
-  searchForSynonyms () {
-    synonymSearch(this.state.text, (origWord, synonym) => {
-      this.setState(prevState => ({
-        textOptions: prevState.textOptions.concat({
-          id: `origWord-${origWord}-${synonym}`,
-          label: `Replace "${origWord}" with "${synonym}"`,
-          fn: text => text.replace(new RegExp(`\\b${origWord}\\b`), synonym)
-        })
-      }))
-    })
-  }
-
   shrinkText () {
     let {text, options} = this.state
 
@@ -59,7 +43,7 @@ class App extends Component {
 
     let opObj
     options.forEach(option => {
-      opObj = this.state.textOptions.find(o => o.id === option)
+      opObj = textOptions.find(o => o.id === option)
       if (opObj) {
         text = opObj.fn(text)
       }
@@ -85,7 +69,9 @@ class App extends Component {
               value={text} />
           </div>
           <div className='col'>
-            <ShrunkText shrunkText={shrunkText} />
+            <div className='TextEntry-shrunk-text'>
+              {shrunkText}
+            </div>
           </div>
         </div>
         <div className='row'>
@@ -96,10 +82,7 @@ class App extends Component {
             {shrunkText && `${shrunkText.length} characters`}
           </div>
         </div>
-        <div className='mar-b-sm mar-t-sm'>
-          <button id='synonym-search' onClick={this.searchForSynonyms}>Search for synonyms</button>
-        </div>
-        <ShrinkOptions textOptions={this.state.textOptions} onOptionChange={this.setOption} />
+        <ShrinkOptions textOptions={textOptions} onOptionChange={this.setOption} />
       </div>
     )
   }
