@@ -4,15 +4,15 @@
 # json.registry @cat.registry
 
 json.links do
-  json.self cat_url(@cat)
-  json.list cats_url
+  json.self api_v1_cat_url(@cat)
+  json.list api_v1_cats_url
   json.update do
     json.method "PUT"
-    json.href cat_url(@cat)
+    json.href api_v1_cat_url(@cat)
   end
   json.delete do
     json.method "DELETE"
-    json.href cat_url(@cat)
+    json.href api_v1_cat_url(@cat)
   end
 end
 json.data do
@@ -22,4 +22,3 @@ json.data do
     json.breed @cat.breed
     json.registry @cat.registry
   end
-end
