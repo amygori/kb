@@ -7,7 +7,7 @@ class ShrinkOption extends React.Component {
       <div className='col-6'>
         <label htmlFor={id}>
           <input type='checkbox' id={id}
-            onChange={(event) => onOptionChange(id, event)} />
+            onChange={(event) => onOptionChange(id, event)} />{' '}
           <span>{label}</span>
         </label>
       </div>
