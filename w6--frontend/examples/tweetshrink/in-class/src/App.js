@@ -2,18 +2,21 @@ import React, {Component} from 'react'
 import 'shoelace-css/dist/shoelace.css'
 import './App.css'
 import textOptions from './textOptions'
-
+import { textToWordSet } from './util'
 import ShrinkOptions from './components/ShrinkOptions'
+import request from 'superagent'
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      text: '',
-      options: []
+      text: 'Today we are going to learn to test React with smoke tests, snapshot tests, and Enzyme, because each has a different purpose when testing React components.',
+      options: [],
+      textOptions: textOptions.slice()
     }
 
     this.setOption = this.setOption.bind(this)
+    this.searchForSynonyms = this.searchForSynonyms.bind(this)
   }
 
   updateText (event) {
@@ -34,6 +37,39 @@ class App extends Component {
     })
   }
 
+  searchForSynonyms () {
+    // break up text into words
+    const words = [...textToWordSet(this.state.text)]
+
+    // for each word.length >= 7
+    const longWords = words.filter(word => word.length >= 7)
+    longWords.forEach(origWord => {
+    // contact synonym source (API) with the word
+      request.get(`https://api.datamuse.com/words?rel_syn=${origWord}`)
+        .then(response => {
+          // add synonyms which are shorter than the word & have score > 400 to textOptions
+          let synonyms = response.body
+          synonyms = synonyms.filter(syn => {
+            return syn.word.length < origWord.length && syn.score > 400
+          })
+          synonyms.forEach(syn => this.addSynonymToTextOptions(origWord, syn.word))
+        })
+    })
+  }
+
+  addSynonymToTextOptions (origWord, synonym) {
+    const newOption = {
+      id: `syn-${origWord}-${synonym}`,
+      label: `Replace "${origWord}" with "${synonym}"`,
+      fn: text => text.replace(new RegExp(`\\b${origWord}\\b`), synonym)
+    }
+    this.setState(prevState => {
+      return {
+        textOptions: prevState.textOptions.concat(newOption)
+      }
+    })
+  }
+
   shrinkText () {
     let {text, options} = this.state
 
@@ -43,7 +79,7 @@ class App extends Component {
 
     let opObj
     options.forEach(option => {
-      opObj = textOptions.find(o => o.id === option)
+      opObj = this.state.textOptions.find(o => o.id === option)
       if (opObj) {
         text = opObj.fn(text)
       }
@@ -82,7 +118,10 @@ class App extends Component {
             {shrunkText && `${shrunkText.length} characters`}
           </div>
         </div>
-        <ShrinkOptions textOptions={textOptions} onOptionChange={this.setOption} />
+        <div className='mar-b-sm mar-t-sm'>
+          <button onClick={this.searchForSynonyms}>Search for synonyms</button>
+        </div>
+        <ShrinkOptions textOptions={this.state.textOptions} onOptionChange={this.setOption} />
       </div>
     )
   }
