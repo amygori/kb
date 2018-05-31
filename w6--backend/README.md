@@ -15,7 +15,7 @@
 - REST in Rails
 - Building an API with Rails
 - JSON and jBuilder
-- [DEMO: cats API]()
+- [DEMO: cats API](notes/cats)
 
 ## Day 3
 
@@ -59,3 +59,13 @@
 - [HTTP Status Codes](http://www.restapitutorial.com/httpstatuscodes.html)
 - - [Rails Guides: Layouts and Rendering - The Status Option](http://guides.rubyonrails.org/layouts_and_rendering.html#the-status-option)
 - [Rails Routing: Namespacing](http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing)
+
+### Token Authentication
+
+- [Good Overview of Token Auth, but pre-Rails 5](https://www.codeschool.com/blog/2014/02/03/token-based-authentication-rails/) -- you still might see this
+- [Explains Rails 5 introduction of `has_secure_token`](https://blog.bigbinary.com/2016/03/23/has-secure-token-to-generate-unique-random-token-in-rails-5.html)
+- [has_secure_token](http://api.rubyonrails.org/classes/ActiveRecord/SecureToken/ClassMethods.html#method-i-has_secure_token)
+- [ActiveRecord::SecureToken](http://api.rubyonrails.org/classes/ActiveRecord/SecureToken/ClassMethods.html)
+- [ActionController::HttpAuthentication::Token::ControllerMethods](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Token/ControllerMethods.html)
+- [MDN HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
+- [Action Controller Filters](http://guides.rubyonrails.org/action_controller_overview.html#filters)
