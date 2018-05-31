@@ -21,6 +21,7 @@
 
 - Building RESTful resources
 - API Authentication
+- [DEMO: cats API with authentication](notes/cats-with-auth)
 
 ## Links
 
