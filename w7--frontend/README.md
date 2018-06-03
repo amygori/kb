@@ -4,7 +4,7 @@
 
 * How to make reusable components
 * Use PropTypes to document and test properties
-* React Storybook for building reusable components
+* (optional) React Storybook for building reusable components
 * Example: build validating form fields
 * Homework: Watch [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
 
@@ -17,7 +17,7 @@
 ## Day 3: The React ecosystem
 
 * Using React Router for multi-page apps
-* Finding other React libraries
+* (optional) Finding other React libraries
 * Homework: Weather application
 
 ## Day 4: State and lifecycle
