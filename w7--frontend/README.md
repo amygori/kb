@@ -3,7 +3,7 @@
 ## Day 1: State and lifecycle
 
 * Lifecycle events
-* Handling cookies with React
+* Handling local storage with React
 * json-server
 * Running example: character generator
 * Homework: Watch [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
