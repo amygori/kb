@@ -1,4 +1,4 @@
-# Week 6: Advanced React
+# Week 7: Advanced React
 
 ## Day 1: Reusable components
 
