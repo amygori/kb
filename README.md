@@ -9,6 +9,7 @@
   * [Week 4](w4--frontend/)
   * [Week 5](w5--frontend/)
   * [Week 6](w6--frontend/)
+  * [Week 7](w7--frontend/)
 * Back End
   * [Week 3](w3--backend)
   * [Week 4](w4--backend)

@@ -91,6 +91,14 @@ class App extends Component {
   render () {
     const text = this.state.text
     const shrunkText = this.shrinkText()
+
+    let lengthInfo
+    if (text) {
+      lengthInfo = <span>{text.length} characters</span>
+    } else {
+      lengthInfo = <span>No text entered</span>
+    }
+
     return (
       <div className='App container'>
         <h1>TweetShrink</h1>
@@ -112,7 +120,7 @@ class App extends Component {
         </div>
         <div className='row'>
           <div className='col'>
-            {text && `${text.length} characters`}
+            {lengthInfo}
           </div>
           <div className='col'>
             {shrunkText && `${shrunkText.length} characters`}
