@@ -1,3 +1,19 @@
 {
-  "alarms": []
+  "alarms": [
+    {
+      "id": 1,
+      "time": 21600,
+      "name": "Wake up"
+    },
+    {
+      "id": 2,
+      "time": 28860,
+      "name": "Leave for work"
+    },
+    {
+      "id": 3,
+      "time": 32400,
+      "name": "Begin class"
+    }
+  ]
 }
