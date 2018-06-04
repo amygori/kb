@@ -7,6 +7,7 @@ import { DateTime } from 'luxon'
 import Container from './components/shoelace/Container'
 import Clock from './components/Clock'
 import AddAlarmButton from './components/AddAlarmButton'
+import AlarmSelector from './components/AlarmSelector'
 import Time from './Time'
 import uuid from 'uuid/v4'
 
@@ -83,11 +84,9 @@ class App extends Component {
         <Container>
           <div className='row row-end'>
             <div className='col-3'>
-              <select onChange={this.changeAlarmSound} value={this.state.alarmSound}>
-                <option value='ship-bell'>Ship Bell</option>
-                <option value='school-bell'>School Bell</option>
-                <option value='fire-alarm'>Fire Alarm</option>
-              </select>
+              <AlarmSelector
+                currentAlarmSound={this.state.alarmSound}
+                changeAlarmSound={this.changeAlarmSound} />
             </div>
           </div>
           <Clock currentTime={this.state.currentTime} />

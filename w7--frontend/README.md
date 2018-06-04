@@ -9,6 +9,11 @@
 * Homework: Watch [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
 * Three-day homework: start contacts manager / json-server for API
 
+### Links
+
+* [Explanation of the React lifecycle](https://levelup.gitconnected.com/componentdidmakesense-react-lifecycle-explanation-393dcb19e459)
+* [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
+
 ## Day 2: Reusable components
 
 * How to make reusable components
@@ -16,6 +21,11 @@
 * (optional) React Storybook for building reusable components
 * (optional) Using _render props_ to expose parent methods to children
 * Day 2 of homework: continue contacts manager
+
+### Links
+
+* [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+* [React Storybook](https://storybook.js.org/)
 
 ## Day 3: The React ecosystem
 
