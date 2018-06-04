@@ -5,9 +5,9 @@ class AlarmSelector extends React.Component {
     const { changeAlarmSound, currentAlarmSound } = this.props
 
     return (<select onChange={changeAlarmSound} value={currentAlarmSound}>
-      <option value='ship-bell'>Ship Bell</option>
-      <option value='school-bell'>School Bell</option>
-      <option value='fire-alarm'>Fire Alarm</option>
+      <option value='shipBell'>Ship Bell</option>
+      <option value='schoolBell'>School Bell</option>
+      <option value='fireAlarm'>Fire Alarm</option>
     </select>)
   }
 }

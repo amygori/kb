@@ -1,17 +1,27 @@
-/* global localStorage */
+/* global localStorage, Audio */
 
 import React, { Component } from 'react'
 import request from 'superagent'
 import { DateTime } from 'luxon'
+import uuid from 'uuid/v4'
 
 import Container from './components/shoelace/Container'
 import Clock from './components/Clock'
 import AddAlarmButton from './components/AddAlarmButton'
 import AlarmSelector from './components/AlarmSelector'
+import Alarm from './components/Alarm'
 import Time from './Time'
-import uuid from 'uuid/v4'
+import schoolBell from './audio/school-bell.wav'
+import fireAlarm from './audio/school-fire-alarm.wav'
+import shipBell from './audio/ship-bell.wav'
 
 import './App.css'
+
+const alarms = {
+  schoolBell,
+  fireAlarm,
+  shipBell
+}
 
 class App extends Component {
   constructor () {
@@ -19,21 +29,36 @@ class App extends Component {
     this.state = {
       currentTime: null,
       alarms: [],
-      alarmSound: null
+      alarmSound: '',
+      alarmRinging: false
     }
 
     this.addAlarm = this.addAlarm.bind(this)
     this.changeAlarmSound = this.changeAlarmSound.bind(this)
+    this.ringAlarm = this.ringAlarm.bind(this)
+    this.deleteAlarm = this.deleteAlarm.bind(this)
   }
 
   addAlarm (time, name) {
+    const newId = uuid()
     this.setState(prevState => ({
       alarms: prevState.alarms.concat({
-        id: uuid(),
+        id: newId,
         time: time,
         name: name
       })
     }))
+
+    request.post('http://localhost:8000/alarms')
+      .send({id: newId, time: time.seconds, name: name})
+      .end()
+  }
+
+  deleteAlarm (id) {
+    this.setState(prevState => ({
+      alarms: prevState.alarms.filter(alarm => alarm.id !== id)
+    }))
+    request.delete(`http://localhost:8000/alarms/${id}`).end()
   }
 
   changeAlarmSound (event) {
@@ -43,10 +68,29 @@ class App extends Component {
     localStorage.alarmSound = event.target.value
   }
 
+  ringAlarm (onOff) {
+    if (onOff && !this.state.alarmRinging) {
+      this.setState({alarmRinging: true}, () => {
+        const alarmSoundAudio = new Audio(alarms[this.state.alarmSound])
+        this.lastAlarm = alarmSoundAudio
+        alarmSoundAudio.play()
+      })
+    }
+    if (!onOff) {
+      if (this.lastAlarm) {
+        this.lastAlarm.pause()
+      }
+      this.setState({alarmRinging: false})
+    }
+  }
+
   componentDidMount () {
+    const alarmSound = localStorage.alarmSound || 'shipBell'
+
     this.setState({
       currentTime: DateTime.local(),
-      alarmSound: localStorage.alarmSound || 'ship-bell'
+      alarmSound: alarmSound,
+      alarmSoundAudio: new Audio(alarms[alarmSound])
     })
     this.intervalId = setInterval(() => {
       this.setState((prevState) => {
@@ -92,16 +136,21 @@ class App extends Component {
           <Clock currentTime={this.state.currentTime} />
           <div className='Buttons'>
             <AddAlarmButton
-              label='10 secs'
-              seconds={10}
+              label='3 secs'
+              seconds={3}
               currentTime={this.state.currentTime}
               addAlarm={this.addAlarm} />
           </div>
           <div className='Alarms'>
             {this.state.alarms.map(alarm => (
-              <div key={alarm.id} className='Alarm'>
-                <span>{alarm.time.toString()}</span> - <span>{alarm.name}</span>
-              </div>
+              <Alarm
+                key={alarm.id}
+                id={alarm.id}
+                time={alarm.time}
+                name={alarm.name}
+                ringAlarm={this.ringAlarm}
+                deleteAlarm={this.deleteAlarm}
+                currentTime={this.state.currentTime} />
             ))}
           </div>
         </Container>
