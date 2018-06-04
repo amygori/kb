@@ -1,3 +1,5 @@
+/* global localStorage */
+
 import React, { Component } from 'react'
 import request from 'superagent'
 import { DateTime } from 'luxon'
@@ -15,25 +17,35 @@ class App extends Component {
     super()
     this.state = {
       currentTime: null,
-      alarms: []
+      alarms: [],
+      alarmSound: null
     }
 
     this.addAlarm = this.addAlarm.bind(this)
+    this.changeAlarmSound = this.changeAlarmSound.bind(this)
   }
 
-  addAlarm (time) {
+  addAlarm (time, name) {
     this.setState(prevState => ({
       alarms: prevState.alarms.concat({
         id: uuid(),
         time: time,
-        label: 'From button'
+        name: name
       })
     }))
   }
 
+  changeAlarmSound (event) {
+    this.setState({
+      alarmSound: event.target.value
+    })
+    localStorage.alarmSound = event.target.value
+  }
+
   componentDidMount () {
     this.setState({
-      currentTime: DateTime.local()
+      currentTime: DateTime.local(),
+      alarmSound: localStorage.alarmSound || 'ship-bell'
     })
     this.intervalId = setInterval(() => {
       this.setState((prevState) => {
@@ -69,6 +81,15 @@ class App extends Component {
     return (
       <div className='App'>
         <Container>
+          <div className='row row-end'>
+            <div className='col-3'>
+              <select onChange={this.changeAlarmSound} value={this.state.alarmSound}>
+                <option value='ship-bell'>Ship Bell</option>
+                <option value='school-bell'>School Bell</option>
+                <option value='fire-alarm'>Fire Alarm</option>
+              </select>
+            </div>
+          </div>
           <Clock currentTime={this.state.currentTime} />
           <div className='Buttons'>
             <AddAlarmButton
@@ -79,7 +100,7 @@ class App extends Component {
           </div>
           <div className='Alarms'>
             {this.state.alarms.map(alarm => (
-              <div class='Alarm'>
+              <div key={alarm.id} className='Alarm'>
                 <span>{alarm.time.toString()}</span> - <span>{alarm.name}</span>
               </div>
             ))}
