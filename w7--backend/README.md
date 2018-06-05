@@ -28,3 +28,15 @@
 - [SQL Joins](https://medium.com/launch-school/sql-joins-and-you-21448802b795)
 - [Arel, Ruby's SQL query builder](https://jpospisil.com/2014/06/16/the-definitive-guide-to-arel-the-sql-manager-for-ruby.html)
 - [20,000 Leagues Under Active Record -- how does AR create and execute SQL?](http://patshaughnessy.net/2014/9/17/20000-leagues-under-activerecord)
+
+### Active Storage
+
+- [Active Storage Rails Guides](http://edgeguides.rubyonrails.org/active_storage_overview.html)
+- [ActiveStorage::Attachment](http://api.rubyonrails.org/classes/ActiveStorage/Attachment.html)
+- [ActiveStorage::Blob](http://api.rubyonrails.org/classes/ActiveStorage/Blob.html)
+- [Implementing Active Storage - video](https://gorails.com/episodes/file-uploading-with-activestorage-rails-5-2)
+
+### Pagination
+
+- [Kaminari gem](https://github.com/kaminari/kaminari)
+- [Kaminari themes](https://github.com/amatsuda/kaminari_themes)
