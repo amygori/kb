@@ -8,6 +8,7 @@
 
 - Uploading files with ActiveStorage
 - Results pagination with Kaminari
+- [DEMO: recipes app](notes/recipes)
 
 ## Day 3
 
