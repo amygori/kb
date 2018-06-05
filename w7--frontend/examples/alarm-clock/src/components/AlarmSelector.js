@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class AlarmSelector extends React.Component {
   render () {
@@ -10,6 +11,11 @@ class AlarmSelector extends React.Component {
       <option value='fireAlarm'>Fire Alarm</option>
     </select>)
   }
+}
+
+AlarmSelector.propTypes = {
+  changeAlarmSound: PropTypes.func.isRequired,
+  currentAlarmSound: PropTypes.string.isRequired
 }
 
 export default AlarmSelector

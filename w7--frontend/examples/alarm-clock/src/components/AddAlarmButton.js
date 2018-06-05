@@ -1,5 +1,7 @@
 import React from 'react'
+import { DateTime } from 'luxon'
 import Time from '../Time'
+import PropTypes from 'prop-types'
 
 class AddAlarmButton extends React.Component {
   shouldComponentUpdate (nextProps) {
@@ -18,6 +20,13 @@ class AddAlarmButton extends React.Component {
       <button onClick={() => this.handleClick()}>+ {label}</button>
     )
   }
+}
+
+AddAlarmButton.propTypes = {
+  currentTime: PropTypes.instanceOf(DateTime),
+  addAlarm: PropTypes.func.isRequired,
+  seconds: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired
 }
 
 export default AddAlarmButton

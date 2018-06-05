@@ -14,6 +14,7 @@ import Time from './Time'
 import schoolBell from './audio/school-bell.wav'
 import fireAlarm from './audio/school-fire-alarm.wav'
 import shipBell from './audio/ship-bell.wav'
+import Spinner from './components/Spinner'
 
 import './App.css'
 
@@ -37,6 +38,45 @@ class App extends Component {
     this.changeAlarmSound = this.changeAlarmSound.bind(this)
     this.ringAlarm = this.ringAlarm.bind(this)
     this.deleteAlarm = this.deleteAlarm.bind(this)
+  }
+
+  componentDidMount () {
+    const alarmSound = localStorage.alarmSound || 'shipBell'
+
+    setTimeout(() => {
+      this.setState({
+        currentTime: DateTime.local(),
+        alarmSound: alarmSound
+      })
+      this.intervalId = setInterval(() => {
+        this.setState((prevState) => {
+          return ({
+            currentTime: prevState.currentTime.plus({seconds: 1})
+          })
+        })
+      }, 1000)
+    }, 1000)
+
+    request.get('http://localhost:8000/alarms')
+      .then((res) => {
+        return res.body
+      })
+      .then((alarms) => {
+        return alarms.map(alarm => ({
+          id: alarm.id,
+          time: new Time(alarm.time),
+          name: alarm.name
+        }))
+      })
+      .then((alarms) => {
+        this.setState({
+          alarms: alarms
+        })
+      })
+  }
+
+  componentWillUnmount () {
+    clearInterval(this.intervalId)
   }
 
   addAlarm (time, name) {
@@ -84,75 +124,39 @@ class App extends Component {
     }
   }
 
-  componentDidMount () {
-    const alarmSound = localStorage.alarmSound || 'shipBell'
-
-    this.setState({
-      currentTime: DateTime.local(),
-      alarmSound: alarmSound,
-      alarmSoundAudio: new Audio(alarms[alarmSound])
-    })
-    this.intervalId = setInterval(() => {
-      this.setState((prevState) => {
-        return ({
-          currentTime: prevState.currentTime.plus({seconds: 1})
-        })
-      })
-    }, 1000)
-
-    request.get('http://localhost:8000/alarms')
-      .then((res) => {
-        return res.body
-      })
-      .then((alarms) => {
-        return alarms.map(alarm => ({
-          id: alarm.id,
-          time: new Time(alarm.time),
-          name: alarm.name
-        }))
-      })
-      .then((alarms) => {
-        this.setState({
-          alarms: alarms
-        })
-      })
-  }
-
-  componentWillUnmount () {
-    clearInterval(this.intervalId)
-  }
-
   render () {
     return (
       <div className='App'>
         <Container>
-          <div className='row row-end'>
-            <div className='col-3'>
-              <AlarmSelector
-                currentAlarmSound={this.state.alarmSound}
-                changeAlarmSound={this.changeAlarmSound} />
+          <Spinner isLoading={!this.state.currentTime}>
+            <div className='row row-end'>
+              <div className='col-3'>
+                <AlarmSelector
+                  currentAlarmSound={this.state.alarmSound}
+                  changeAlarmSound={this.changeAlarmSound} />
+              </div>
             </div>
-          </div>
-          <Clock currentTime={this.state.currentTime} />
-          <div className='Buttons'>
-            <AddAlarmButton
-              label='3 secs'
-              seconds={3}
-              currentTime={this.state.currentTime}
-              addAlarm={this.addAlarm} />
-          </div>
-          <div className='Alarms'>
-            {this.state.alarms.map(alarm => (
-              <Alarm
-                key={alarm.id}
-                id={alarm.id}
-                time={alarm.time}
-                name={alarm.name}
-                ringAlarm={this.ringAlarm}
-                deleteAlarm={this.deleteAlarm}
-                currentTime={this.state.currentTime} />
-            ))}
-          </div>
+            <Clock currentTime={this.state.currentTime} />
+            <div className='Buttons'>
+              <AddAlarmButton
+                label='3 secs'
+                seconds={3}
+                currentTime={this.state.currentTime}
+                addAlarm={this.addAlarm} />
+            </div>
+            <div className='Alarms'>
+              {this.state.alarms.map(alarm => (
+                <Alarm
+                  key={alarm.id}
+                  id={alarm.id}
+                  time={alarm.time}
+                  name={alarm.name}
+                  ringAlarm={this.ringAlarm}
+                  deleteAlarm={this.deleteAlarm}
+                  currentTime={this.state.currentTime} />
+              ))}
+            </div>
+          </Spinner>
         </Container>
       </div>
     )

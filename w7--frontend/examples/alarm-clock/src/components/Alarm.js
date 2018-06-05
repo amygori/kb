@@ -1,9 +1,11 @@
 import React from 'react'
 import 'csshake/dist/csshake-default.css'
-import './Alarm.css'
+import PropTypes from 'prop-types'
 
+import './Alarm.css'
 import { diffObject } from '../util'
 import Time from '../Time'
+import { DateTime } from 'luxon'
 
 class Alarm extends React.Component {
   constructor () {
@@ -32,6 +34,12 @@ class Alarm extends React.Component {
       diffPropKeys[0] !== 'currentTime')
   }
 
+  componentDidUpdate () {
+    if (this.state.goingOff) {
+      this.props.ringAlarm(true)
+    }
+  }
+
   render () {
     const { id, time, name, ringAlarm, deleteAlarm } = this.props
     if (this.state.goingOff) {
@@ -43,16 +51,19 @@ class Alarm extends React.Component {
     return (
       <div className='Alarm'>
         <span>{time.toString()}</span> - <span>{name}</span>&nbsp;
-        <button class='button-xs button-danger' onClick={event => deleteAlarm(id)}>&times;</button>
+        <button className='button-xs button-danger' onClick={event => deleteAlarm(id)}>&times;</button>
       </div>
     )
   }
+}
 
-  componentDidUpdate () {
-    if (this.state.goingOff) {
-      this.props.ringAlarm(true)
-    }
-  }
+Alarm.propTypes = {
+  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  name: PropTypes.string.isRequired,
+  time: PropTypes.instanceOf(Time).isRequired,
+  deleteAlarm: PropTypes.func.isRequired,
+  ringAlarm: PropTypes.func.isRequired,
+  currentTime: PropTypes.instanceOf(DateTime)
 }
 
 export default Alarm

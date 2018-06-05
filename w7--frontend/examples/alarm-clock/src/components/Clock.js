@@ -1,6 +1,7 @@
 import React from 'react'
 import { DateTime } from 'luxon'
 import './Clock.css'
+import PropTypes from 'prop-types'
 
 class Clock extends React.Component {
   render () {
@@ -9,6 +10,10 @@ class Clock extends React.Component {
       {currentTime && currentTime.toLocaleString(DateTime.TIME_24_WITH_SECONDS)}
     </div>)
   }
+}
+
+Clock.propTypes = {
+  currentTime: PropTypes.instanceOf(DateTime)
 }
 
 export default Clock
