@@ -1,5 +1,5 @@
 .Alarm--going-off {
-  background-color: red;
+  background-color: var(--hot-pink);
   color: white;
   font-size: 2rem;
   padding: 1rem;

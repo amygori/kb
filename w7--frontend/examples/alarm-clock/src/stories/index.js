@@ -1,7 +1,6 @@
 import React from 'react'
 import 'shoelace-css/dist/shoelace.css'
 
-
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
@@ -38,5 +37,7 @@ const isRequired = (value) => {
 
 storiesOf('TextField', module)
   .add('with no props', () => (<TextField name='username' />))
-  .add('with onChange', () => (<TextField name='username' onChange={action('field changed')} />))
-  .add('with isRequired validation', () => (<TextField name='username' validations={[isRequired]} onChange={action('field changed')} />))
+  .add('with onChange', () => (
+    <TextField name='username' onChange={action('field changed')} />))
+  .add('with isRequired validation', () => (
+    <TextField name='username' validations={[isRequired]} onChange={action('field changed')} />))

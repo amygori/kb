@@ -34,7 +34,8 @@ class TextField extends React.Component {
     const { name } = this.props
     const errors = this.state.errors
     return (
-      <div className={'input-field ' + (errors.length > 0 ? 'input-invalid' : 'input-valid')}>
+      // TODO use classnames here
+      <div className={'input-field ' + (errors.length > 0 && 'input-invalid')}>
         <input name={name} type='text' onChange={this.handleChange} />
         {errors.map(error => <p className='input-hint'>{`${name} ${error}`}</p>)}
       </div>

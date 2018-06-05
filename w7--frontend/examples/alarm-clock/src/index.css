@@ -1,7 +1,28 @@
+:root {
+  --hot-pink: #D9314C;
+  --dark-blue: #213258;
+  --gray: #616B74;
+  --turquoise: #69C8B6;
+  --yellow: #DBD95C;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+button {
+  background-color: var(--turquoise);
+  border-color: var(--turquoise);
+  color: black;
+}
+
+button.button-danger {
+  background-color: var(--hot-pink);
+  border-color: var(--hot-pink);
 }
 
 .App {
