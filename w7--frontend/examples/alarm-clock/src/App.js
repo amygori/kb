@@ -33,11 +33,6 @@ class App extends Component {
       alarmSound: '',
       alarmRinging: false
     }
-
-    this.addAlarm = this.addAlarm.bind(this)
-    this.changeAlarmSound = this.changeAlarmSound.bind(this)
-    this.ringAlarm = this.ringAlarm.bind(this)
-    this.deleteAlarm = this.deleteAlarm.bind(this)
   }
 
   componentDidMount () {
@@ -79,7 +74,7 @@ class App extends Component {
     clearInterval(this.intervalId)
   }
 
-  addAlarm (time, name) {
+  addAlarm = (time, name) => {
     const newId = uuid()
     this.setState(prevState => ({
       alarms: prevState.alarms.concat({
@@ -94,21 +89,21 @@ class App extends Component {
       .end()
   }
 
-  deleteAlarm (id) {
+  deleteAlarm = (id) => {
     this.setState(prevState => ({
       alarms: prevState.alarms.filter(alarm => alarm.id !== id)
     }))
     request.delete(`http://localhost:8000/alarms/${id}`).end()
   }
 
-  changeAlarmSound (event) {
+  changeAlarmSound = (event) => {
     this.setState({
       alarmSound: event.target.value
     })
     localStorage.alarmSound = event.target.value
   }
 
-  ringAlarm (onOff) {
+  ringAlarm = (onOff) => {
     if (onOff && !this.state.alarmRinging) {
       this.setState({alarmRinging: true}, () => {
         const alarmSoundAudio = new Audio(alarms[this.state.alarmSound])

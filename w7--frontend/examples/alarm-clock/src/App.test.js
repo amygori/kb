@@ -10,8 +10,12 @@ nock('http://localhost:8000')
   .get('/alarms')
   .reply(200, [])
 
-it('renders without crashing', () => {
+it('renders without crashing', (done) => {
   const div = document.createElement('div')
   ReactDOM.render(<App />, div)
-  ReactDOM.unmountComponentAtNode(div)
+  // Do this to prevent request returning after unmount
+  setTimeout(() => {
+    ReactDOM.unmountComponentAtNode(div)
+    done()
+  }, 10)
 })

@@ -1,7 +1,7 @@
 import React from 'react'
 import 'shoelace-css/dist/shoelace.css'
 
-import { storiesOf } from '@storybook/react'
+import { storiesOf, addDecorator } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
@@ -10,7 +10,14 @@ import { Welcome } from '@storybook/react/demo'
 import Clock from '../components/Clock'
 import Spinner from '../components/Spinner'
 import TextField from '../components/TextField'
+import AddAlarmForm from '../components/AddAlarmForm'
 import { DateTime } from 'luxon'
+
+addDecorator(story => (
+  <div className='container'>
+    {story()}
+  </div>
+))
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
 
@@ -41,3 +48,6 @@ storiesOf('TextField', module)
     <TextField name='username' onChange={action('field changed')} />))
   .add('with isRequired validation', () => (
     <TextField name='username' validations={[isRequired]} onChange={action('field changed')} />))
+
+storiesOf('AddAlarmForm', module)
+  .add('with no props', () => (<AddAlarmForm onAdd={action('form submitted')} />))
