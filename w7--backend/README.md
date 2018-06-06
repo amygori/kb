@@ -3,6 +3,7 @@
 ## Day 1
 
 - SQL queries
+- [DEMO: Kate's pet registry](https://github.com/katestud/pet_registry_sql_demo)
 
 ## Day 2
 
