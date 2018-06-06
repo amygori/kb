@@ -13,6 +13,17 @@ class AlarmForm extends React.Component {
     }
   }
 
+  static getDerivedStateFromProps (props) {
+    const { alarm } = props
+    if (alarm) {
+      return {
+        name: alarm.name,
+        seconds: alarm.time.seconds,
+        time: alarm.time.toString().substr(0, 5)
+      }
+    }
+  }
+
   handleChangeName = (event) => {
     const { value } = event.target
 
@@ -28,27 +39,35 @@ class AlarmForm extends React.Component {
   }
 
   handleSubmit = (event) => {
+    const history = this.props.history
+
     event.preventDefault()
 
     const { onSave } = this.props
     if (onSave) {
       onSave({time: new Time(this.state.seconds), name: this.state.name})
+      history.push('/')
     }
   }
 
   render () {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <InputField label='Time' name='time' type='time' value={this.state.time} onChange={this.handleChangeTime} />
-        <InputField label='Name' name='name' type='text' value={this.state.name} onChange={this.handleChangeName} />
-        <button>Add Alarm</button>
-      </form>
+      <div class='AlarmForm'>
+        {this.props.title && <h1>{this.props.title}</h1>}
+        <form onSubmit={this.handleSubmit}>
+          <InputField label='Time' name='time' type='text' value={this.state.time} onChange={this.handleChangeTime} />
+          <InputField label='Name' name='name' type='text' value={this.state.name} onChange={this.handleChangeName} />
+          <button>Add Alarm</button>
+        </form>
+      </div>
+
     )
   }
 }
 
 AlarmForm.propTypes = {
-  onSave: PropTypes.func
+  onSave: PropTypes.func,
+  title: PropTypes.string
 }
 
 export default AlarmForm

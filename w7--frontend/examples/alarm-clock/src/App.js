@@ -6,6 +6,7 @@ import Container from './components/shoelace/Container'
 import Time from './Time'
 import AlarmForm from './components/AlarmForm'
 import Dashboard from './components/Dashboard'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './App.css'
 
@@ -14,8 +15,7 @@ class App extends Component {
     super()
     this.state = {
       alarms: [],
-      alarmRinging: false,
-      addingAlarm: false
+      alarmRinging: false
     }
   }
 
@@ -60,29 +60,48 @@ class App extends Component {
     request.delete(`http://localhost:8000/alarms/${id}`).end()
   }
 
+  editAlarm = (id, editedAlarm) => {
+    const alarm = this.state.alarms.find(alarm => alarm.id === id)
+    alarm.name = editedAlarm.name
+    alarm.time = editedAlarm.time
+
+    request.put(`http://localhost:8000/alarms/${id}`)
+      .send(editedAlarm)
+      .then(req => this.forceUpdate())
+  }
+
   render () {
-    let currentView
-
-    if (this.state.addingAlarm) {
-      currentView = <AlarmForm onSave={(alarm) => {
-        this.addAlarm(alarm.time, alarm.name)
-        this.setState({addingAlarm: false})
-      }} />
-    } else {
-      currentView = <Dashboard
-        alarms={this.state.alarms}
-        addAlarm={this.addAlarm}
-        deleteAlarm={this.deleteAlarm}
-        showAlarmForm={(event) => this.setState({addingAlarm: true})}
-      />
-    }
-
     return (
-      <div className='App'>
-        <Container>
-          {currentView}
-        </Container>
-      </div>
+      <Router>
+        <div className='App'>
+          <Container>
+            <Route exact path='/' render={() => (
+              <Dashboard
+                alarms={this.state.alarms}
+                addAlarm={this.addAlarm}
+                deleteAlarm={this.deleteAlarm}
+                showAlarmForm={(event) => this.setState({addingAlarm: true})}
+              />
+            )} />
+            <Route path='/add' render={(props) => (
+              <AlarmForm
+                title='Add Alarm'
+                onSave={(alarm) => {
+                  this.addAlarm(alarm.time, alarm.name)
+                }} {...props} />
+            )} />
+            <Route path='/edit/:id' render={(props) => {
+              const match = props.match
+              const alarm = this.state.alarms.find(alarm => alarm.id === match.params.id)
+              return <AlarmForm alarm={alarm}
+                title='Edit Alarm'
+                onSave={(editedAlarm) => {
+                  this.editAlarm(alarm.id, editedAlarm)
+                }} {...props} />
+            }} />
+          </Container>
+        </div>
+      </Router>
     )
   }
 }

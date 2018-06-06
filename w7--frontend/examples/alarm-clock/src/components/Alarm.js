@@ -7,6 +7,9 @@ import { diffObject } from '../util'
 import Time from '../Time'
 import { DateTime } from 'luxon'
 
+import { Link } from 'react-router-dom'
+
+
 class Alarm extends React.Component {
   constructor () {
     super()
@@ -53,7 +56,7 @@ class Alarm extends React.Component {
         <div className='col-4'>{time.toString()}</div>
         <div className='col-4'>{name}</div>
         <div className='col-4'>
-          <button className='button'>Edit</button>
+          <Link to={`/edit/${id}`} className='button'>Edit</Link>
           &nbsp;
           <button className='button-danger' onClick={event => deleteAlarm(id)}>Delete</button>
         </div>

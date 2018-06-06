@@ -14,7 +14,7 @@ body {
   color: white;
 }
 
-button {
+button, .button {
   background-color: var(--turquoise);
   border-color: var(--turquoise);
   color: black;

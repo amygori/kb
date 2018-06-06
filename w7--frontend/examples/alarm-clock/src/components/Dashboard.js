@@ -3,6 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { DateTime } from 'luxon'
+import { Link } from 'react-router-dom'
 
 import Time from '../Time'
 import Spinner from './Spinner'
@@ -79,7 +80,7 @@ class Dashboard extends React.Component {
   }
 
   render () {
-    const { alarms, showAlarmForm, addAlarm, deleteAlarm } = this.props
+    const { alarms, addAlarm, deleteAlarm } = this.props
 
     return (
       <Spinner isLoading={!this.state.currentTime}>
@@ -97,7 +98,7 @@ class Dashboard extends React.Component {
             seconds={3}
             currentTime={this.state.currentTime}
             addAlarm={addAlarm} />
-          <button onClick={showAlarmForm}>+ alarm</button>
+          <Link to='/add' className='button'>+ alarm</Link>
         </div>
         <div className='Alarms'>
           {alarms.map(alarm => (
