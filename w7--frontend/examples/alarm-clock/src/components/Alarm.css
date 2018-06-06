@@ -1,3 +1,7 @@
+.Alarm {
+  margin: 1rem auto;
+}
+
 .Alarm--going-off {
   background-color: var(--hot-pink);
   color: white;

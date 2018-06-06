@@ -49,9 +49,12 @@ class Alarm extends React.Component {
       </div>)
     }
     return (
-      <div className='Alarm'>
-        <span>{time.toString()}</span> - <span>{name}</span>&nbsp;
-        <button className='button-xs button-danger' onClick={event => deleteAlarm(id)}>&times;</button>
+      <div className='Alarm row'>
+        <div className='col-4'>{time.toString()}</div>
+        <div className='col-4'>{name}</div>
+        <div className='col-4'>
+          <button className='button-danger' onClick={event => deleteAlarm(id)}>Delete</button>
+        </div>
       </div>
     )
   }

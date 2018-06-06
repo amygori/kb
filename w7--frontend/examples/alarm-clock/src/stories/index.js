@@ -9,8 +9,8 @@ import { Welcome } from '@storybook/react/demo'
 
 import Clock from '../components/Clock'
 import Spinner from '../components/Spinner'
-import TextField from '../components/TextField'
-import AddAlarmForm from '../components/AddAlarmForm'
+import InputField from '../components/shoelace/InputField'
+import AlarmForm from '../components/AlarmForm'
 import { DateTime } from 'luxon'
 
 addDecorator(story => (
@@ -42,12 +42,12 @@ const isRequired = (value) => {
   }
 }
 
-storiesOf('TextField', module)
-  .add('with no props', () => (<TextField name='username' />))
+storiesOf('InputField', module)
+  .add('with minimal props', () => (<InputField name='username' />))
   .add('with onChange', () => (
-    <TextField name='username' onChange={action('field changed')} />))
+    <InputField label='Username' name='username' onChange={action('field changed')} />))
   .add('with isRequired validation', () => (
-    <TextField name='username' validations={[isRequired]} onChange={action('field changed')} />))
+    <InputField label='Username' name='username' validations={[isRequired]} onChange={action('field changed')} />))
 
-storiesOf('AddAlarmForm', module)
-  .add('with no props', () => (<AddAlarmForm onAdd={action('form submitted')} />))
+storiesOf('AlarmForm', module)
+  .add('default', () => (<AlarmForm onSave={action('form submitted')} />))

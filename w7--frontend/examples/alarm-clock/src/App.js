@@ -15,6 +15,7 @@ import schoolBell from './audio/school-bell.wav'
 import fireAlarm from './audio/school-fire-alarm.wav'
 import shipBell from './audio/ship-bell.wav'
 import Spinner from './components/Spinner'
+import AlarmForm from './components/AlarmForm'
 
 import './App.css'
 
@@ -31,7 +32,8 @@ class App extends Component {
       currentTime: null,
       alarms: [],
       alarmSound: '',
-      alarmRinging: false
+      alarmRinging: false,
+      addingAlarm: false
     }
   }
 
@@ -138,7 +140,14 @@ class App extends Component {
                 seconds={3}
                 currentTime={this.state.currentTime}
                 addAlarm={this.addAlarm} />
+              <button onClick={event => this.setState({addingAlarm: true})}>+ alarm</button>
             </div>
+            {this.state.addingAlarm &&
+              <AlarmForm onSave={(alarm) => {
+                this.addAlarm(alarm.time, alarm.name)
+                this.setState({addingAlarm: false})
+              }} />
+            }
             <div className='Alarms'>
               {this.state.alarms.map(alarm => (
                 <Alarm
