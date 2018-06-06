@@ -14,7 +14,7 @@
 
 - Mailers
 - [DEMO: in-class mailers app](notes/mailers-in-class)
-- [DEMO: mailers with tests](notes/mailer-demos)
+- [DEMO: mailers with tests](notes/mailer-demo)
 
 ## Day 4
 
