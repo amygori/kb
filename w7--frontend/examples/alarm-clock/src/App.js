@@ -61,22 +61,26 @@ class App extends Component {
   }
 
   render () {
+    let currentView
+
+    if (this.state.addingAlarm) {
+      currentView = <AlarmForm onSave={(alarm) => {
+        this.addAlarm(alarm.time, alarm.name)
+        this.setState({addingAlarm: false})
+      }} />
+    } else {
+      currentView = <Dashboard
+        alarms={this.state.alarms}
+        addAlarm={this.addAlarm}
+        deleteAlarm={this.deleteAlarm}
+        showAlarmForm={(event) => this.setState({addingAlarm: true})}
+      />
+    }
+
     return (
       <div className='App'>
         <Container>
-          {this.state.addingAlarm
-            ? <AlarmForm onSave={(alarm) => {
-              this.addAlarm(alarm.time, alarm.name)
-              this.setState({addingAlarm: false})
-            }} />
-            : <Dashboard
-              alarms={this.state.alarms}
-              addAlarm={this.addAlarm}
-              deleteAlarm={this.deleteAlarm}
-              showAlarmForm={(event) => this.setState({addingAlarm: true})}
-            />
-          }
-
+          {currentView}
         </Container>
       </div>
     )
