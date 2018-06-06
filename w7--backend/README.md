@@ -13,6 +13,8 @@
 ## Day 3
 
 - Mailers
+- [DEMO: in-class mailers app](notes/mailers-in-class)
+- [DEMO: mailers with tests](notes/mailer-demos)
 
 ## Day 4
 
@@ -41,3 +43,12 @@
 
 - [Kaminari gem](https://github.com/kaminari/kaminari)
 - [Kaminari themes](https://github.com/amatsuda/kaminari_themes)
+
+### Mailers
+
+- [Action Mailer Basics - Rails Guides](http://guides.rubyonrails.org/action_mailer_basics.html)
+- [ActionMailer::Base](http://api.rubyonrails.org/classes/ActionMailer/Base.html)
+- [`mail` method](http://api.rubyonrails.org/classes/ActionMailer/Base.html#method-i-mail)
+- [ActionMailer::MessageDelivery](http://api.rubyonrails.org/classes/ActionMailer/MessageDelivery.html)
+- [Testing Mailers](http://guides.rubyonrails.org/testing.html#testing-your-mailers)
+- [Mailer Test Helper](http://api.rubyonrails.org/v5.2.0/classes/ActionMailer/TestHelper.html)
