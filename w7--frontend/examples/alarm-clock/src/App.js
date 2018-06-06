@@ -66,7 +66,7 @@ class App extends Component {
     alarm.time = editedAlarm.time
 
     request.put(`http://localhost:8000/alarms/${id}`)
-      .send(editedAlarm)
+      .send({name: alarm.name, time: alarm.time.seconds})
       .then(req => this.forceUpdate())
   }
 

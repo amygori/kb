@@ -38,17 +38,15 @@ class Dashboard extends React.Component {
       alarmSound: alarmSound
     })
 
-    setTimeout(() => {
-      this.setState({
-        currentTime: DateTime.local()
-      })
-      this.intervalId = setInterval(() => {
-        this.setState((prevState) => {
-          return ({
-            currentTime: prevState.currentTime.plus({seconds: 1})
-          })
+    this.setState({
+      currentTime: DateTime.local()
+    })
+    this.intervalId = setInterval(() => {
+      this.setState((prevState) => {
+        return ({
+          currentTime: prevState.currentTime.plus({seconds: 1})
         })
-      }, 1000)
+      })
     }, 1000)
   }
 
@@ -83,36 +81,38 @@ class Dashboard extends React.Component {
     const { alarms, addAlarm, deleteAlarm } = this.props
 
     return (
-      <Spinner isLoading={!this.state.currentTime}>
-        <div className='row row-end'>
-          <div className='col-3'>
-            <AlarmSelector
-              currentAlarmSound={this.state.alarmSound}
-              changeAlarmSound={this.changeAlarmSound} />
+      <div className='Dashboard'>
+        <Spinner isLoading={!this.state.currentTime}>
+          <div className='row row-end'>
+            <div className='col-3'>
+              <AlarmSelector
+                currentAlarmSound={this.state.alarmSound}
+                changeAlarmSound={this.changeAlarmSound} />
+            </div>
           </div>
-        </div>
-        <Clock currentTime={this.state.currentTime} />
-        <div className='Buttons'>
-          <AddAlarmButton
-            label='3 secs'
-            seconds={3}
-            currentTime={this.state.currentTime}
-            addAlarm={addAlarm} />
-          <Link to='/add' className='button'>+ alarm</Link>
-        </div>
-        <div className='Alarms'>
-          {alarms.map(alarm => (
-            <Alarm
-              key={alarm.id}
-              id={alarm.id}
-              time={alarm.time}
-              name={alarm.name}
-              ringAlarm={this.ringAlarm}
-              deleteAlarm={deleteAlarm}
-              currentTime={this.state.currentTime} />
-          ))}
-        </div>
-      </Spinner>
+          <Clock currentTime={this.state.currentTime} />
+          <div className='Buttons'>
+            <AddAlarmButton
+              label='3 secs'
+              seconds={3}
+              currentTime={this.state.currentTime}
+              addAlarm={addAlarm} />
+            <Link to='/add' className='button'>+ alarm</Link>
+          </div>
+          <div className='Alarms'>
+            {alarms.map(alarm => (
+              <Alarm
+                key={alarm.id}
+                id={alarm.id}
+                time={alarm.time}
+                name={alarm.name}
+                ringAlarm={this.ringAlarm}
+                deleteAlarm={deleteAlarm}
+                currentTime={this.state.currentTime} />
+            ))}
+          </div>
+        </Spinner>
+      </div>
     )
   }
 }

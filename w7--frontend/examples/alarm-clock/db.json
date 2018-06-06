@@ -11,14 +11,14 @@
       "name": "Begin class"
     },
     {
-      "id": "7da74dc8-f105-425a-9198-507b535c8f67",
-      "time": 0,
-      "name": "lunch"
+      "name": "lunch",
+      "time": 43200,
+      "id": "7da74dc8-f105-425a-9198-507b535c8f67"
     },
     {
-      "id": "b33a1a84-f0aa-465f-8854-38a7c82a2e1b",
-      "time": 44100,
-      "name": "next lunch"
+      "name": "next lunch!",
+      "time": 46800,
+      "id": "b33a1a84-f0aa-465f-8854-38a7c82a2e1b"
     }
   ]
 }

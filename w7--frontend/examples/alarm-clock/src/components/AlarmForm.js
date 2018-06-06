@@ -13,9 +13,9 @@ class AlarmForm extends React.Component {
     }
   }
 
-  static getDerivedStateFromProps (props) {
+  static getDerivedStateFromProps (props, state) {
     const { alarm } = props
-    if (alarm) {
+    if (alarm && !state.time && !state.name) {
       return {
         name: alarm.name,
         seconds: alarm.time.seconds,
@@ -55,9 +55,9 @@ class AlarmForm extends React.Component {
       <div class='AlarmForm'>
         {this.props.title && <h1>{this.props.title}</h1>}
         <form onSubmit={this.handleSubmit}>
-          <InputField label='Time' name='time' type='text' value={this.state.time} onChange={this.handleChangeTime} />
+          <InputField label='Time' name='time' type='time' value={this.state.time} onChange={this.handleChangeTime} />
           <InputField label='Name' name='name' type='text' value={this.state.name} onChange={this.handleChangeName} />
-          <button>Add Alarm</button>
+          <button>Save</button>
         </form>
       </div>
 
