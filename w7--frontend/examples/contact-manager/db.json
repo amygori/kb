@@ -1,0 +1,6 @@
+{
+  "contacts": [
+    {"id": "1", "name": "Johnny Appleseed", "birthday": "06/07", "notes": "This guy **loves** apples."},
+    {"id": "2", "name": "Bojangles", "birthday": "09/04", "notes": "_Too much harmonica._ Avoid."}
+  ]
+}
