@@ -8,6 +8,8 @@
 
 - Adding admin dashboards to your Rails applications
 - Full-text search with postgres
+- [DEMO: Products with Admin](notes/products-admin)
+- [DEMO: Artist Search](notes/search-app)
 
 ## Day 3
 
@@ -50,3 +52,16 @@
 - [Thoughtbot: Using Arel to Compose SQL Queries](https://robots.thoughtbot.com/using-arel-to-compose-sql-queries)
 - [Viget: Composable SQL Queries in Rails Using Arel](https://www.viget.com/articles/composable-sql-queries-in-rails-using-arel/)
 - [Arel Cheatsheet](https://devhints.io/arel)
+
+### Full-text search
+
+- [`pg_search` gem](https://github.com/Casecommons/pg_search)
+- [Using different search features](https://github.com/Casecommons/pg_search#searching-using-different-search-features)
+- [Viget Blog: Implementing Full-Text Search in Rails](https://www.viget.com/articles/implementing-full-text-search-in-rails-with-postgres/)
+
+### ActiveAdmin
+
+- [How to add Active Admin to a Rails API-only application](http://www.carlosramireziii.com/how-to-add-active-admin-to-a-rails-5-api-application.html)
+- [Heroku blog post on Active Admin with Rails 5 api and create-react-app](https://blog.heroku.com/a-rock-solid-modern-web-stack)
+- [Arbre docs](https://activeadmin.github.io/arbre/)
+- [Active Admin docs](https://activeadmin.info/)
