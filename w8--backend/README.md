@@ -78,3 +78,4 @@
 - [Blog Post: Using Delayed Job](http://bica.co/2015/03/08/howto-using-activejob-with-delayedjob/)
 - [Running Jobs](https://github.com/collectiveidea/delayed_job#running-jobs)
 - [Delayed Job Details](https://github.com/collectiveidea/delayed_job#gory-details)
+- [Using Delayed Job on Heroku](https://devcenter.heroku.com/articles/delayed-job)
