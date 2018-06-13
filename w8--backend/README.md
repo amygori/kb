@@ -14,6 +14,7 @@
 ## Day 3
 
 - Background processing in Rails with Active Job
+- [DEMO: Background Job app](https://classroom.github.com/a/tSsMvU5y)
 
 ## Day 4
 
@@ -59,9 +60,21 @@
 - [Using different search features](https://github.com/Casecommons/pg_search#searching-using-different-search-features)
 - [Viget Blog: Implementing Full-Text Search in Rails](https://www.viget.com/articles/implementing-full-text-search-in-rails-with-postgres/)
 
-### ActiveAdmin
+### Admin Dashboards with ActiveAdmin
 
 - [How to add Active Admin to a Rails API-only application](http://www.carlosramireziii.com/how-to-add-active-admin-to-a-rails-5-api-application.html)
 - [Heroku blog post on Active Admin with Rails 5 api and create-react-app](https://blog.heroku.com/a-rock-solid-modern-web-stack)
 - [Arbre docs](https://activeadmin.github.io/arbre/)
 - [Active Admin docs](https://activeadmin.info/)
+- [Thoughtbot's alternative Administrate](https://github.com/thoughtbot/administrate)
+
+### Background Jobs with Active Job
+
+- [Active Job Basics - Rails Guides](http://guides.rubyonrails.org/active_job_basics.html)
+- [ActiveJob::Base](http://api.rubyonrails.org/classes/ActiveJob/Base.html)
+- [Active Job Queuing Backends](http://edgeguides.rubyonrails.org/active_job_basics.html#backends)
+- [ActiveJob::QueueAdapters](http://edgeapi.rubyonrails.org/classes/ActiveJob/QueueAdapters.html)
+- [Delayed Job](https://github.com/collectiveidea/delayed_job)
+- [Blog Post: Using Delayed Job](http://bica.co/2015/03/08/howto-using-activejob-with-delayedjob/)
+- [Running Jobs](https://github.com/collectiveidea/delayed_job#running-jobs)
+- [Delayed Job Details](https://github.com/collectiveidea/delayed_job#gory-details)
