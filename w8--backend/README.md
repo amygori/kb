@@ -14,7 +14,7 @@
 ## Day 3
 
 - Background processing in Rails with Active Job
-- [DEMO: Background Job app](https://classroom.github.com/a/tSsMvU5y)
+- [DEMO: Background Job app](notes/report-job)
 
 ## Day 4
 
