@@ -79,3 +79,16 @@
 - [Running Jobs](https://github.com/collectiveidea/delayed_job#running-jobs)
 - [Delayed Job Details](https://github.com/collectiveidea/delayed_job#gory-details)
 - [Using Delayed Job on Heroku](https://devcenter.heroku.com/articles/delayed-job)
+
+### Mutability in Ruby
+
+- [Mutable and Immutable Objects](http://rubylearning.com/satishtalim/mutable_and_immutable_objects.html)
+- [Variable References and Mutability of Objects in Ruby from Launch School](https://launchschool.com/blog/references-and-mutability-in-ruby)
+- [A Review of Immutability in Ruby](https://www.rubypigeon.com/posts/a-review-of-immutability-in-ruby/)
+
+### Regular Expressions
+
+- [Ruby 2.5.1 Regexp Class](https://ruby-doc.org/core-2.5.1/Regexp.html)
+- [Rubular: A Ruby Regular Expression Editor](http://www.rubular.com/)
+- [Ruby Regex Tricks](http://blog.honeybadger.io/ruby-regex-tricks/  )
+- [Regex One: interactive tutorial](https://regexone.com/)
