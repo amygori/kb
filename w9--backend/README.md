@@ -28,6 +28,7 @@
 
 ### Security considerations in web development
 
+- [Rails Guides: Securing Rails Applications](http://guides.rubyonrails.org/security.html)
 - [The Open Web Application Security Project (OWASP) security cheatsheet for RoR applications](https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet)
 - [Cross-Site Scripting (XSS) in Rails](https://blog.bigbinary.com/2012/05/10/xss-and-rails.html)
 - [Cross-site request forgery in Rails](https://blog.bigbinary.com/2012/05/10/csrf-and-rails.html)
