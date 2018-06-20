@@ -46,7 +46,7 @@
 - [LaunchSchool Getting Started with Exceptions](https://launchschool.com/blog/getting-started-with-ruby-exceptions)
 - [Ruby `begin...end`](https://blog.newrelic.com/2014/11/13/weird-ruby-begin-end/)
 - [Ruby `rescue` and `ensure`](https://blog.newrelic.com/2014/12/10/weird-ruby-2-rescue-interrupt-ensure/)
-- [Weird Ruby](https://blog.newrelic.com/2014/12/10/weird-ruby-2-rescue-interrupt-ensure/)
+
 
 ###
 
