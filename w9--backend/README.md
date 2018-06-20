@@ -39,7 +39,19 @@
 - [Server-side CORS access control on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Server-Side_Access_Control)
 - [Great compendium of CORS documentation](https://enable-cors.org/)
 
-## Links
+### Working with Errors and Exceptions in Ruby
+
+- [A Beginner's Guide to Exceptions in Ruby](http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/)
+- [Ruby Exceptions](http://rubylearning.com/satishtalim/ruby_exceptions.html)
+- [LaunchSchool Getting Started with Exceptions](https://launchschool.com/blog/getting-started-with-ruby-exceptions)
+- [Ruby `begin...end`](https://blog.newrelic.com/2014/11/13/weird-ruby-begin-end/)
+- [Ruby `rescue` and `ensure`](https://blog.newrelic.com/2014/12/10/weird-ruby-2-rescue-interrupt-ensure/)
+- [Weird Ruby](https://blog.newrelic.com/2014/12/10/weird-ruby-2-rescue-interrupt-ensure/)
+
+###
+
+
+## Other Links and Resources
 
 ### Rspec
 
